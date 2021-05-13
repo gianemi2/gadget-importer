@@ -1,0 +1,5 @@
+{
+    "require": {
+        "prewk/xml-string-streamer": "^1.1"
+    }
+}
