@@ -66,6 +66,22 @@ function run_gadget_importer() {
 	$plugin->run();
 
 }
-if($_GET['run']){
-	run_gadget_importer();
-}
+add_action('init', function(){
+	if($_GET['run']){
+		run_gadget_importer();
+	};
+	if($_GET['read']){
+		
+		$rand_product_id = get_posts(['post_type' => 'product'])[0]->ID;
+		echo $rand_product_id . '<br>';
+		$myvals = get_post_meta($rand_product_id);
+
+		if($myvals && count($myvals) > 0){
+			foreach($myvals as $key=>$val)
+			{
+				echo $key . ' : ' . $val[0] . '<br/>';
+			}
+		}
+
+	}
+});
