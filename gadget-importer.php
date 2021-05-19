@@ -50,6 +50,7 @@ define( 'GADGET_URL', plugin_dir_url(__FILE__));
  */
 require GADGET_PATH . 'includes/class-gadget-importer.php';
 require GADGET_PATH . 'vendor/autoload.php';
+require GADGET_PATH . 'helpers/products.php';
 
 /**
  * Begins execution of the plugin.
@@ -68,6 +69,7 @@ function run_gadget_importer() {
 }
 add_action('init', function(){
 	if($_GET['run']){
+		//hello();
 		run_gadget_importer();
 	};
 	if($_GET['read']){

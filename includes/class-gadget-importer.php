@@ -9,6 +9,7 @@ class Gadget_Importer{
         $this->FTP_CONNECTION = ftp_connect($this->FTP_HOST);
         ftp_login($this->FTP_CONNECTION, $this->FTP_USER, $this->FTP_PASS);
 
+        $this->STOCK_READY = true;
         $this->PRODUCTS_XML = 'prodinfo_it_v1.1.xml';
         $this->STOCK_XML = 'stock.xml';
 
@@ -18,11 +19,17 @@ class Gadget_Importer{
             $this->PRODUCTS_XML,
             $this->STOCK_XML
         ];
+        $this->IMPORTED_SKU = [];
     }
 
     function download_xml($xml) {
         try {
             $local_file = GADGET_PATH . $xml;
+            if(!$this->isFileUpdated($xml)){
+                $this->STOCK_READY = false;
+            } else {
+                return;
+            }
             $server_file = $xml;
             if (ftp_get($this->FTP_CONNECTION, $local_file, $server_file, FTP_BINARY)) {
                 echo "<br>Successfully downloaded ";
@@ -37,9 +44,12 @@ class Gadget_Importer{
     }
 
     function read($xml, $node = 3){ 
+        // Debug: remove the comment.
+        //if($this->STOCK_READY) return false;
         $streamer = Prewk\XmlStringStreamer::createStringWalkerParser(GADGET_PATH . $xml, ['captureDepth' => $node]);
         $i = 0;
         while ($node = $streamer->getNode()) {
+            // Debug: Remove count
             if($i < 10){
                 $xml_product = simplexml_load_string($node);
                 $this->elaborateArray($xml_product);
@@ -54,72 +64,56 @@ class Gadget_Importer{
     }
 
     function import(){
-        $product;
-        $serialized_variations;
+        $product = [];
+        $serialized_variations = false;
 
         $this->ELABORATED_ARRAY = array_values($this->ELABORATED_ARRAY);
         foreach ($this->ELABORATED_ARRAY as $products) {
             $product = $products[0];
-            if(count($products) === 1){
-                $serialized_variations = [];
-            } else {
+            if(count($products) > 1){
                 $color_variations = [];
                 $serialized_variations = [
                     'color' => [
-                        'name' => 'Color',
-                        'value' => '',
-                        'position' => 0,
-                        'is_visible' => 1,
-                        'is_variation' => 0,
-                        'is_taxonomy' => 0
+                        'label' => 'pa_color',
+                        'value' => []
                     ]
                 ];
-                unset($products[0]);
-                foreach($products as $variation){
-                    $color_variations[] = $variation->COLOR_DESCRIPTION;
-                }
-                $color_variations = implode('|', $color_variations);
-                $serialized_variations['color']['value'] = $color_variations;
 
+                foreach($products as $variation){
+                    $color_variations[] = (string)$variation->COLOR_DESCRIPTION;
+                }
+                $serialized_variations['color']['value'] = $color_variations;
             }
             $this->processProductToWordPress($product, $serialized_variations);
         }
     }
 
-    function processProductToWordPress($product, $serialized_variations){
+    function processProductToWordPress($product, $variations){
         $post_title = (string)$product->PRODUCT_NAME;
         $thumbnail_id = upload_image($product->THUMBNAIL_URL)['id'];
-        $wp_product = [
-            'post_title' => $post_title,
-            'post_status' => 'publish',
-            'post_type' => 'product',
-            'post_content' => (string)$product->LONG_DESCRIPTION,
-            'post_excerpt' => (string)$product->SHORT_DESCRIPTION,
-            'meta_input' => [
-                '_sku' => (string)$product->PRODUCT_ID,
-                '_stock' => 9999,
-                '_length' => (string)$product->PACKAGING_CARTON->LENGTH,
-                '_width' => (string)$product->PACKAGING_CARTON->WIDTH,
-                '_height' => (string)$product->PACKAGING_CARTON->HEIGHT,
-                '_weight' => (string)$product->PACKAGING_CARTON->WEIGHT,
-                '_price' => 80,
-                '_regular_price' => 95,
-                '_thumbnail_id' => $thumbnail_id,
-                '_product_attributes' => $serialized_variations
-            ]
+        if(in_array($product->PRODUCT_ID, $this->IMPORTED_SKU)) return;
+
+        $product = [
+            'name' => $post_title,
+            'description' => (string)$product->LONG_DESCRIPTION,
+            'sku' => (string)$product->PRODUCT_ID,
+            'stock' => 9999
         ];
-        $post_id = wp_insert_post( $wp_product );
-        if($post_id){
-            $this->handleAllImages($product, $post_id);
-            echo $post_id . ' caricato correttamente';
+
+        if($variations){
+            $attributes = create_attributes($variations['color']);
+            $variable_product_id = create_variable_product($product, $attributes);
+            link_attributes_to_product($variable_product_id, $variations['color']);
+        } else {
+            $product_id = create_simple_product($product);
         }
     }
 
     function handleAllImages($product, $post_id){
-        upload_image($product->IMAGE_URL, $post_id);
+        upload_image($product->IMAGE_URL);
 
         foreach ($product->DIGITAL_ASSETS as $image) {
-            upload_image($image->DIGITAL_ASSET->URL, $post_id);
+            upload_image($image->DIGITAL_ASSET->URL);
         }
     }
 
@@ -140,8 +134,7 @@ class Gadget_Importer{
 
     function run(){
 
-        //$this->download_xml($this->PRODUCTS_XML);
-        
+        $this->download_xml($this->PRODUCTS_XML);
         $this->read($this->PRODUCTS_XML);
     }
 }
