@@ -48,9 +48,11 @@ define( 'GADGET_URL', plugin_dir_url(__FILE__));
  * The core plugin class that is used to define internationalization,
  * admin-specific hooks, and public-facing site hooks.
  */
-require GADGET_PATH . 'includes/class-gadget-importer.php';
 require GADGET_PATH . 'vendor/autoload.php';
+require GADGET_PATH . 'helpers/upload-image.php';
+require GADGET_PATH . 'helpers/snippets.php';
 require GADGET_PATH . 'helpers/products.php';
+require GADGET_PATH . 'includes/class-gadget-importer.php';
 
 /**
  * Begins execution of the plugin.
@@ -68,22 +70,32 @@ function run_gadget_importer() {
 
 }
 add_action('init', function(){
-	if($_GET['run']){
-		//hello();
-		run_gadget_importer();
-	};
-	if($_GET['read']){
-		
-		$rand_product_id = get_posts(['post_type' => 'product'])[0]->ID;
-		echo $rand_product_id . '<br>';
-		$myvals = get_post_meta($rand_product_id);
-
-		if($myvals && count($myvals) > 0){
-			foreach($myvals as $key=>$val)
-			{
-				echo $key . ' : ' . $val[0] . '<br/>';
+	switch ($_GET['payload']) {
+		case 'delete':
+			$products = get_posts(['post_type' => 'product', 'posts_per_page' => -1]);
+			foreach ($products as $product) {
+				wp_delete_post($product->ID, true);
 			}
-		}
+			break;
+		case 'test':
+			$args = ['label' => 'pa_height', 'value' => '1000'];
+			create_attributes($args);
+			break;
+		case 'run':
+			run_gadget_importer();
+			break;
+		case 'read':
+			$rand_product_id = get_posts(['post_type' => 'product'])[0]->ID;
+			echo $rand_product_id . '<br>';
+			$myvals = get_post_meta($rand_product_id);
 
+			if($myvals && count($myvals) > 0){
+				foreach($myvals as $key=>$val)
+				{
+					echo $key . ' : ' . $val[0] . '<br/>';
+				}
+			}
+		default:
+			break;
 	}
-});
+}, 6);

@@ -1,33 +1,28 @@
 <?php 
-require(GADGET_PATH . 'helpers/upload-image.php');
 class Gadget_Importer{
     function __construct(){
+        $this->IMPORT_FILE = fopen(GADGET_PATH . 'file.csv', 'w');
+        fputcsv($this->IMPORT_FILE, get_first_line());
+
         $this->FTP_HOST = 'transfer.midoceanbrands.com';
         $this->FTP_USER = 'gadgetfirenze';
         $this->FTP_PASS = '80841212';
-
         $this->FTP_CONNECTION = ftp_connect($this->FTP_HOST);
         ftp_login($this->FTP_CONNECTION, $this->FTP_USER, $this->FTP_PASS);
 
-        $this->STOCK_READY = true;
         $this->PRODUCTS_XML = 'prodinfo_it_v1.1.xml';
         $this->STOCK_XML = 'stock.xml';
-
-        $this->ELABORATED_ARRAY = [];
 
         $this->TODOWNLOAD = [
             $this->PRODUCTS_XML,
             $this->STOCK_XML
         ];
-        $this->IMPORTED_SKU = [];
     }
 
     function download_xml($xml) {
         try {
             $local_file = GADGET_PATH . $xml;
-            if(!$this->isFileUpdated($xml)){
-                $this->STOCK_READY = false;
-            } else {
+            if($this->isFileUpdated($xml)){
                 return;
             }
             $server_file = $xml;
@@ -44,47 +39,28 @@ class Gadget_Importer{
     }
 
     function read($xml, $node = 3){ 
-        // Debug: remove the comment.
-        //if($this->STOCK_READY) return false;
         $streamer = Prewk\XmlStringStreamer::createStringWalkerParser(GADGET_PATH . $xml, ['captureDepth' => $node]);
-        $i = 0;
         while ($node = $streamer->getNode()) {
-            // Debug: Remove count
-            if($i < 10){
-                $xml_product = simplexml_load_string($node);
-                $this->elaborateArray($xml_product);
-            }
-            $i++;
+            $xml_product = simplexml_load_string($node);
+            $this->ELABORATED_ARRAY[(string)$xml_product->PRODUCT_BASE_NUMBER][] = $xml_product;
         }
+        
         $this->import();
     }
 
-    function elaborateArray($xml_product){
-        $this->ELABORATED_ARRAY[(string)$xml_product->PRODUCT_BASE_NUMBER][] = $xml_product;
-    }
-
     function import(){
-        $product = [];
-        $serialized_variations = false;
-
         $this->ELABORATED_ARRAY = array_values($this->ELABORATED_ARRAY);
         foreach ($this->ELABORATED_ARRAY as $products) {
-            $product = $products[0];
-            if(count($products) > 1){
-                $color_variations = [];
-                $serialized_variations = [
-                    'color' => [
-                        'label' => 'pa_color',
-                        'value' => []
-                    ]
-                ];
-
-                foreach($products as $variation){
-                    $color_variations[] = (string)$variation->COLOR_DESCRIPTION;
+            $product_type = count($products) > 1 ? 'variable' : 'simple';
+            //$products = $is_variation ? convert_variable_products($products) : $products;
+            $csv_line = convert_xml_to_woocommerce($products, $product_type);
+            if(is_array($csv_line[0])){
+                foreach ($csv_line as $line) {
+                    fputcsv($this->IMPORT_FILE, $line);
                 }
-                $serialized_variations['color']['value'] = $color_variations;
+            } else {
+                fputcsv($this->IMPORT_FILE, $csv_line);
             }
-            $this->processProductToWordPress($product, $serialized_variations);
         }
     }
 
@@ -96,14 +72,18 @@ class Gadget_Importer{
         $product = [
             'name' => $post_title,
             'description' => (string)$product->LONG_DESCRIPTION,
-            'sku' => (string)$product->PRODUCT_ID,
+            //'sku' => (string)$product->PRODUCT_ID,
+            'sku' => (string)$product->PRODUCT_NUMBER,
             'stock' => 9999
         ];
 
         if($variations){
-            $attributes = create_attributes($variations['color']);
-            $variable_product_id = create_variable_product($product, $attributes);
-            link_attributes_to_product($variable_product_id, $variations['color']);
+            $variations = array_values($variations);
+            foreach ($variations as $variation) {
+                $attributes = create_attributes($variation);
+                $variable_product_id = create_variable_product($product, $attributes);
+                link_attributes_to_product($variable_product_id, $variation);   
+            }
         } else {
             $product_id = create_simple_product($product);
         }
