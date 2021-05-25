@@ -43,6 +43,8 @@ define( 'GADGET_IMPORTER_VERSION', '1.0.0' );
  */
 define( 'GADGET_PATH', plugin_dir_path( __FILE__ ));
 define( 'GADGET_URL', plugin_dir_url(__FILE__));
+define( 'XML_PATH', GADGET_PATH . 'xml/');
+define( 'CSV_PATH', GADGET_PATH . 'csv/');
 
 /**
  * The core plugin class that is used to define internationalization,
@@ -53,6 +55,9 @@ require GADGET_PATH . 'helpers/upload-image.php';
 require GADGET_PATH . 'helpers/snippets.php';
 require GADGET_PATH . 'helpers/products.php';
 require GADGET_PATH . 'includes/class-gadget-importer.php';
+require GADGET_PATH . 'helpers/csv-headings.php';
+require GADGET_PATH . 'controllers/DownloadController.php';
+require GADGET_PATH . 'controllers/ImportController.php';
 
 /**
  * Begins execution of the plugin.
@@ -65,37 +70,39 @@ require GADGET_PATH . 'includes/class-gadget-importer.php';
  */
 function run_gadget_importer() {
 
-	$plugin = new Gadget_Importer();
-	$plugin->run();
+	//$plugin = new Gadget_Importer();
+	//$plugin->run();
 
 }
-add_action('init', function(){
-	switch ($_GET['payload']) {
-		case 'delete':
-			$products = get_posts(['post_type' => 'product', 'posts_per_page' => -1]);
-			foreach ($products as $product) {
-				wp_delete_post($product->ID, true);
-			}
-			break;
-		case 'test':
-			$args = ['label' => 'pa_height', 'value' => '1000'];
-			create_attributes($args);
-			break;
-		case 'run':
-			run_gadget_importer();
-			break;
-		case 'read':
-			$rand_product_id = get_posts(['post_type' => 'product'])[0]->ID;
-			echo $rand_product_id . '<br>';
-			$myvals = get_post_meta($rand_product_id);
 
-			if($myvals && count($myvals) > 0){
-				foreach($myvals as $key=>$val)
-				{
-					echo $key . ' : ' . $val[0] . '<br/>';
+add_action('init', function(){
+	$files = [
+		[
+			'name' => 'prodinfo_it_v1.1.xml',
+			'payload' => 'prodinfo'
+		]
+	];
+	switch ($_GET['payload']) {
+		case 'run':
+			foreach ($files as $file) {
+				$downloader = new DownloadController();
+				$downloader->download_xml($file['name']);	
+				$importer = new ImportController($file['name']);
+
+				switch ($file['payload']) {
+					case 'prodinfo':
+						$importer->readProdInfo();
+						break;
+					
+					default:
+						# code...
+						break;
 				}
 			}
+			break;
+		
 		default:
+			# code...
 			break;
 	}
 }, 6);
