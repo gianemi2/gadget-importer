@@ -44,20 +44,19 @@ define( 'GADGET_IMPORTER_VERSION', '1.0.0' );
 define( 'GADGET_PATH', plugin_dir_path( __FILE__ ));
 define( 'GADGET_URL', plugin_dir_url(__FILE__));
 define( 'XML_PATH', GADGET_PATH . 'xml/');
-define( 'CSV_PATH', GADGET_PATH . 'csv/');
+define( 'OUTPUT_PATH', GADGET_PATH . 'output/');
 
 /**
  * The core plugin class that is used to define internationalization,
  * admin-specific hooks, and public-facing site hooks.
  */
 require GADGET_PATH . 'vendor/autoload.php';
-require GADGET_PATH . 'helpers/upload-image.php';
-require GADGET_PATH . 'helpers/snippets.php';
 require GADGET_PATH . 'helpers/products.php';
-require GADGET_PATH . 'includes/class-gadget-importer.php';
 require GADGET_PATH . 'helpers/csv-headings.php';
+require GADGET_PATH . 'controllers/ReaderController.php';
 require GADGET_PATH . 'controllers/DownloadController.php';
 require GADGET_PATH . 'controllers/ImportController.php';
+require GADGET_PATH . 'controllers/ConvertController.php';
 
 /**
  * Begins execution of the plugin.
@@ -77,23 +76,56 @@ function run_gadget_importer() {
 
 add_action('init', function(){
 	$files = [
+		/* [
+			'name' => 'stock.xml',
+			'payload' => 'stock'
+		],
+		[
+			'name' => 'stock_textile.xml',
+			'payload' => 'stock'
+		],
 		[
 			'name' => 'prodinfo_it_v1.1.xml',
-			'payload' => 'prodinfo'
+			'payload' => 'prodinfo',
+			'compare' => 'stock.json'
+		],
+		[
+			'name' => 'prodinfo_TEXTILE_IT.xml',
+			'payload' => 'prodinfo',
+			'compare' => 'stock_textile.json'
+		] */
+		[
+			'name' => 'USBpricelist.xml',
+			'payload' => 'usbprice',
+			'remote_folder' => 'usbpricelist/'
+		],
+		[
+			'name' => 'USBprodinfo.xml',
+			'payload' => 'usb',
+			'compare' => 'USBpricelist.json'
 		]
 	];
 	switch ($_GET['payload']) {
 		case 'run':
 			foreach ($files as $file) {
 				$downloader = new DownloadController();
-				$downloader->download_xml($file['name']);	
-				$importer = new ImportController($file['name']);
-
+				$downloader->download_xml($file);
 				switch ($file['payload']) {
-					case 'prodinfo':
-						$importer->readProdInfo();
+					case 'stock': 
+						$converter = new ConvertController($file, 2);
+						$converter->run();
 						break;
-					
+					case 'usbprice':
+						$converter = new ConvertController($file, 3);
+						$converter->run('CODE');
+						break;
+					case 'prodinfo':
+						$importer = new ImportController($file, 3, OUTPUT_PATH . $file['compare']);
+						$importer->run('prodinfo');
+						break;
+					case 'usb':
+						$importer = new ImportController($file, 3);
+						$importer->run('usb', 'code');
 					default:
 						# code...
 						break;

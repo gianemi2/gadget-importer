@@ -1,6 +1,6 @@
 <?php
-
-function convert_xml_prodinfo($products, $product_type){
+function convert_xml_prodinfo($products, $product_type, $compare_file = false){
+    $compare_file = (array)$compare_file;
     $variables = [
         'color' => [],
         'size' => []
@@ -23,15 +23,17 @@ function convert_xml_prodinfo($products, $product_type){
     $category_string .= strlen($p->CATEGORY_LEVEL_3) > 0 ? ' > ' . $p->CATEGORY_LEVEL_3 : '';
     $category_string .= strlen($p->CATEGORY_LEVEL_4) > 0 ? ' > ' . $p->CATEGORY_LEVEL_4 : '';
     $images = $p->IMAGE_URL;
-    foreach($p->DIGITAL_ASSETS->DIGITAL_ASSET as $el){
-        $images .= ',' . $el->URL;
-    };
+    if(isset($p->DIGITAL_ASSETS)){
+        foreach($p->DIGITAL_ASSETS->DIGITAL_ASSET as $el){
+            $images .= ',' . $el->URL;
+        };
+    }
     switch ($product_type) {
         case 'variable':
             $variable = [];
             $variable[] = [
                 'variable', // Type
-                (string)$p->PRODUCT_BASE_NUMBER, // SKU
+                (string)$p->PRODUCT_NUMBER, // SKU
                 (string)$p->PRODUCT_NAME, // Name
                 1, // Published
                 '', // Parent
@@ -40,7 +42,7 @@ function convert_xml_prodinfo($products, $product_type){
                 (string)$p->SHORT_DESCRIPTION, // Short description
                 (string)$p->LONG_DESCRIPTION, // Description
                 1, // In stock
-                9999, // Stock
+                $compare_file[(string)$p->PRODUCT_NUMBER]->QUANTITY, // Stock
                 (string)$p->PACKAGING_CARTON->WEIGHT, // Weight
                 (string)$p->PACKAGING_CARTON->LENGTH, // Length
                 (string)$p->PACKAGING_CARTON->WIDTH, // Width
@@ -59,20 +61,20 @@ function convert_xml_prodinfo($products, $product_type){
                 1 // Attr global
             ];
             for($i = 1; $i < count($products); $i++){
-                $main_product = $products[0];
+                $parent_product = $products[0];
                 $p = $products[$i];
                 $variable[] = [
                     'variation', // Type
                     (string)$p->PRODUCT_NUMBER, // SKU
                     (string)$p->PRODUCT_NAME, // Name
                     1, // Published
-                    (string)$p->PRODUCT_BASE_NUMBER, // Parent
+                    (string)$parent_product->PRODUCT_NUMBER, // Parent
                     0, // Is featured
                     'visible', // Visibility in catalog
                     (string)$p->SHORT_DESCRIPTION, // Short description
                     (string)$p->LONG_DESCRIPTION, // Description
                     1, // In stock
-                    9999, // Stock
+                    $compare_file[(string)$p->PRODUCT_NUMBER]->QUANTITY, // Stock
                     (string)$p->PACKAGING_CARTON->WEIGHT, // Weight
                     (string)$p->PACKAGING_CARTON->LENGTH, // Length
                     (string)$p->PACKAGING_CARTON->WIDTH, // Width
@@ -96,7 +98,7 @@ function convert_xml_prodinfo($products, $product_type){
         case 'simple':
             return [
                 'simple', // Type
-                (string)$p->PRODUCT_BASE_NUMBER, // SKU
+                (string)$p->PRODUCT_NUMBER, // SKU
                 (string)$p->PRODUCT_NAME, // Name
                 1, // Published
                 '', // Parent
@@ -105,7 +107,7 @@ function convert_xml_prodinfo($products, $product_type){
                 (string)$p->SHORT_DESCRIPTION, // Short description
                 (string)$p->LONG_DESCRIPTION, // Description
                 1, // In stock
-                9999, // Stock
+                $compare_file[(string)$p->PRODUCT_NUMBER]->QUANTITY, // Stock
                 (string)$p->PACKAGING_CARTON->WEIGHT, // Weight
                 (string)$p->PACKAGING_CARTON->LENGTH, // Length
                 (string)$p->PACKAGING_CARTON->WIDTH, // Width
@@ -127,27 +129,4 @@ function convert_xml_prodinfo($products, $product_type){
         default:
             return;
     }
-}
-
-function link_attributes_to_product($variable_product_id, $attributes){
-    foreach ($attributes['value'] as $value) {
-        $variation = new WC_Product_Variation();
-        $variation->set_regular_price(100);
-        $variation->set_parent_id($variable_product_id);
-
-        $variation->set_attributes(array(
-            $attributes['label'] => $value
-        ));
-        $variation->save();
-    }
-}
-
-function does_product_exists($sku){
-    global $wpdb;
-
-    $product_id = $wpdb->get_var( $wpdb->prepare( "SELECT post_id FROM $wpdb->postmeta WHERE meta_key='_sku' AND meta_value='%s' LIMIT 1", $sku ) );
-
-    if ( $product_id ) return $product_id;
-
-    return false;
 }

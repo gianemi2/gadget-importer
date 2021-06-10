@@ -1,30 +1,54 @@
 <?php
-class ImportController{
-    function __construct($xml_name){
-        $this->XML = XML_PATH . $xml_name;
-        $this->CSV = CSV_PATH . str_replace('.xml', '.csv', $xml_name);
+class ImportController extends ReaderController{
+    function __construct($xml_name, $nodeParseDepth = 3, $compare_file = false, $product_type = 'prodinfo'){
+        parent::__construct($xml_name);
+        $this->CSV = str_replace('.xml', '.csv', $this->output);
         $this->CSV_STREAM = fopen($this->CSV, 'w');
         $this->PRODUCTS = [];
-    }
-
-    function readProdInfo($nodeParseDepth = 3){ 
-        $streamer = Prewk\XmlStringStreamer::createStringWalkerParser($this->XML, ['captureDepth' => $nodeParseDepth]);
-        while ($node = $streamer->getNode()) {
-            $xml_product = simplexml_load_string($node);
-            $this->PRODUCTS[(string)$xml_product->PRODUCT_BASE_NUMBER][] = $xml_product;
-            $i++;
+        $this->JSON = false; 
+        $this->PRODUCT_TYPE = $product_type;
+        if($compare_file){
+            $json = file_get_contents($compare_file);
+            if($json){
+                $this->JSON = json_decode($json);
+            }
         }
-        
-        $this->importProdInfo();
     }
 
-    function importProdInfo(){
+    function run($product_type, $sku_property = 'PRODUCT_BASE_NUMBER'){ 
+        while ($node = $this->data->getNode()) {
+            $xml_product = simplexml_load_string($node, 'SimpleXMLElement', LIBXML_NOCDATA);
+            $this->PRODUCTS[(string)$xml_product->$sku_property][] = $xml_product;
+        }
+        switch ($this->PRODUCT_TYPE) {
+            case 'prodinfo':
+                $this->createProdInfoCSV();
+                break;
+            case 'usb': 
+                $this->createUSBCSV();
+                break;
+            default:
+                # code...
+                break;
+        }
+    }
+
+    function createUSBCSV(){
+        fputcsv($this->CSV_STREAM, get_csv_headings('prodinfo'));
+        $this->PRODUCTS = array_values($this->PRODUCTS);
+
+        foreach ($this->PRODUCTS as $key => $value) {
+
+        }
+    }
+
+    function createProdInfoCSV(){
         fputcsv($this->CSV_STREAM, get_csv_headings('prodinfo'));
         $this->PRODUCTS = array_values($this->PRODUCTS);
 
         foreach ($this->PRODUCTS as $products) {
             $product_type = count($products) > 1 ? 'variable' : 'simple';
-            $csv_line = convert_xml_prodinfo($products, $product_type);
+            $csv_line = convert_xml_prodinfo($products, $product_type, $this->JSON);
             if(is_array($csv_line[0])){
                 foreach ($csv_line as $line) {
                     fputcsv($this->CSV_STREAM, $line);
