@@ -2,6 +2,7 @@
 class ImportController extends ReaderController{
     function __construct($xml_name, $nodeParseDepth = 3, $compare_file = false, $product_type = 'prodinfo'){
         parent::__construct($xml_name);
+        
         $this->CSV = str_replace('.xml', '.csv', $this->output);
         $this->CSV_STREAM = fopen($this->CSV, 'w');
         $this->PRODUCTS = [];
@@ -15,7 +16,7 @@ class ImportController extends ReaderController{
         }
     }
 
-    function run($product_type, $sku_property = 'PRODUCT_BASE_NUMBER'){ 
+    function run($sku_property = 'PRODUCT_BASE_NUMBER'){ 
         while ($node = $this->data->getNode()) {
             $xml_product = simplexml_load_string($node, 'SimpleXMLElement', LIBXML_NOCDATA);
             $this->PRODUCTS[(string)$xml_product->$sku_property][] = $xml_product;
@@ -37,8 +38,13 @@ class ImportController extends ReaderController{
         fputcsv($this->CSV_STREAM, get_csv_headings('prodinfo'));
         $this->PRODUCTS = array_values($this->PRODUCTS);
 
-        foreach ($this->PRODUCTS as $key => $value) {
+        echo '<pre>';
+        print_r($this->JSON);
+        print_r($this->PRODUCTS);
+        echo '</pre>';
 
+        foreach ($this->PRODUCTS as $product) {
+            
         }
     }
 

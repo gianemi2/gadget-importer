@@ -42,7 +42,7 @@ function convert_xml_prodinfo($products, $product_type, $compare_file = false){
                 (string)$p->SHORT_DESCRIPTION, // Short description
                 (string)$p->LONG_DESCRIPTION, // Description
                 1, // In stock
-                $compare_file[(string)$p->PRODUCT_NUMBER]->QUANTITY, // Stock
+                $compare_file[(string)$p->PRODUCT_NUMBER][0]->QUANTITY, // Stock
                 (string)$p->PACKAGING_CARTON->WEIGHT, // Weight
                 (string)$p->PACKAGING_CARTON->LENGTH, // Length
                 (string)$p->PACKAGING_CARTON->WIDTH, // Width
@@ -74,7 +74,7 @@ function convert_xml_prodinfo($products, $product_type, $compare_file = false){
                     (string)$p->SHORT_DESCRIPTION, // Short description
                     (string)$p->LONG_DESCRIPTION, // Description
                     1, // In stock
-                    $compare_file[(string)$p->PRODUCT_NUMBER]->QUANTITY, // Stock
+                    $compare_file[(string)$p->PRODUCT_NUMBER][0]->QUANTITY, // Stock
                     (string)$p->PACKAGING_CARTON->WEIGHT, // Weight
                     (string)$p->PACKAGING_CARTON->LENGTH, // Length
                     (string)$p->PACKAGING_CARTON->WIDTH, // Width
@@ -107,7 +107,7 @@ function convert_xml_prodinfo($products, $product_type, $compare_file = false){
                 (string)$p->SHORT_DESCRIPTION, // Short description
                 (string)$p->LONG_DESCRIPTION, // Description
                 1, // In stock
-                $compare_file[(string)$p->PRODUCT_NUMBER]->QUANTITY, // Stock
+                $compare_file[(string)$p->PRODUCT_NUMBER][0]->QUANTITY, // Stock
                 (string)$p->PACKAGING_CARTON->WEIGHT, // Weight
                 (string)$p->PACKAGING_CARTON->LENGTH, // Length
                 (string)$p->PACKAGING_CARTON->WIDTH, // Width

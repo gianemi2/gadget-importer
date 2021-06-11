@@ -115,17 +115,17 @@ add_action('init', function(){
 						$converter = new ConvertController($file, 2);
 						$converter->run();
 						break;
+					case 'prodinfo':
+						$importer = new ImportController($file, 3, OUTPUT_PATH . $file['compare'], 'prodinfo');
+						$importer->run();
+						break;
 					case 'usbprice':
 						$converter = new ConvertController($file, 3);
 						$converter->run('CODE');
 						break;
-					case 'prodinfo':
-						$importer = new ImportController($file, 3, OUTPUT_PATH . $file['compare']);
-						$importer->run('prodinfo');
-						break;
 					case 'usb':
-						$importer = new ImportController($file, 3);
-						$importer->run('usb', 'code');
+						$importer = new ImportController($file, 3, OUTPUT_PATH . $file['compare'], 'usb');
+						$importer->run('code');
 					default:
 						# code...
 						break;
