@@ -1,0 +1,4124 @@
+[
+      {
+        "id": "P1",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Tampondruck"
+          },
+          {
+            "language": "EN",
+            "text": "pad printing"
+          },
+          {
+            "language": "FR",
+            "text": "tampographie"
+          },
+          {
+            "language": "EL",
+            "text": "ταμπονοτυπία"
+          },
+          {
+            "language": "HU",
+            "text": "Tamponnyomás"
+          },
+          {
+            "language": "IT",
+            "text": "tampografia"
+          },
+          {
+            "language": "PL",
+            "text": "tampon"
+          },
+          {
+            "language": "NL",
+            "text": "tampondruk"
+          },
+          {
+            "language": "PT",
+            "text": "Tampografia"
+          },
+          {
+            "language": "RU",
+            "text": "Тампопечать"
+          },
+          {
+            "language": "ES",
+            "text": "tampografía"
+          },
+          {
+            "language": "SV",
+            "text": "tampotryck"
+          }
+        ]
+      },
+      {
+        "id": "P2",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Tampondruck"
+          },
+          {
+            "language": "EN",
+            "text": "pad printing"
+          },
+          {
+            "language": "FR",
+            "text": "tampographie"
+          },
+          {
+            "language": "EL",
+            "text": " εκτύπωση"
+          },
+          {
+            "language": "HU",
+            "text": "Tamponnyomás"
+          },
+          {
+            "language": "IT",
+            "text": "tampografia"
+          },
+          {
+            "language": "PL",
+            "text": "tampon"
+          },
+          {
+            "language": "NL",
+            "text": "tampondruk"
+          },
+          {
+            "language": "PT",
+            "text": "Tampografia"
+          },
+          {
+            "language": "RU",
+            "text": "Тампопечать"
+          },
+          {
+            "language": "ES",
+            "text": "tampografía"
+          },
+          {
+            "language": "SV",
+            "text": "tampotryck"
+          }
+        ]
+      },
+      {
+        "id": "P3",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Tampondruck"
+          },
+          {
+            "language": "EN",
+            "text": "pad printing"
+          },
+          {
+            "language": "FR",
+            "text": "tampographie"
+          },
+          {
+            "language": "EL",
+            "text": "ταμπονοτυπία"
+          },
+          {
+            "language": "HU",
+            "text": "Tamponnyomás"
+          },
+          {
+            "language": "IT",
+            "text": "tampografia"
+          },
+          {
+            "language": "PL",
+            "text": "tampon"
+          },
+          {
+            "language": "NL",
+            "text": "tampondruk"
+          },
+          {
+            "language": "PT",
+            "text": "Tampografia"
+          },
+          {
+            "language": "RU",
+            "text": "Тампопечать"
+          },
+          {
+            "language": "ES",
+            "text": "tampografía"
+          },
+          {
+            "language": "SV",
+            "text": "tampotryck"
+          }
+        ]
+      },
+      {
+        "id": "S0",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Siebdruck"
+          },
+          {
+            "language": "EN",
+            "text": "screen printing"
+          },
+          {
+            "language": "FR",
+            "text": "sérigraphie"
+          },
+          {
+            "language": "EL",
+            "text": "μεταξοτυπία"
+          },
+          {
+            "language": "HU",
+            "text": "Szitanyomás"
+          },
+          {
+            "language": "IT",
+            "text": "serigrafia"
+          },
+          {
+            "language": "PL",
+            "text": "sitodruk"
+          },
+          {
+            "language": "NL",
+            "text": "zeefdruk"
+          },
+          {
+            "language": "PT",
+            "text": "Serigrafia"
+          },
+          {
+            "language": "RU",
+            "text": "Шелкотрафаретная печать"
+          },
+          {
+            "language": "ES",
+            "text": "serigrafía"
+          },
+          {
+            "language": "SV",
+            "text": "Screentryck"
+          }
+        ]
+      },
+      {
+        "id": "S1",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Siebdruck"
+          },
+          {
+            "language": "EN",
+            "text": "screen printing"
+          },
+          {
+            "language": "FR",
+            "text": "sérigraphie"
+          },
+          {
+            "language": "EL",
+            "text": "μεταξοτυπία"
+          },
+          {
+            "language": "HU",
+            "text": "Szitanyomás"
+          },
+          {
+            "language": "IT",
+            "text": "serigrafia"
+          },
+          {
+            "language": "PL",
+            "text": "sitodruk"
+          },
+          {
+            "language": "NL",
+            "text": "zeefdruk"
+          },
+          {
+            "language": "PT",
+            "text": "Serigrafia"
+          },
+          {
+            "language": "RU",
+            "text": "Шелкотрафаретная печать"
+          },
+          {
+            "language": "ES",
+            "text": "serigrafía"
+          },
+          {
+            "language": "SV",
+            "text": "Screentryck"
+          }
+        ]
+      },
+      {
+        "id": "S2",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Siebdruck"
+          },
+          {
+            "language": "EN",
+            "text": "screen printing"
+          },
+          {
+            "language": "FR",
+            "text": "sérigraphie"
+          },
+          {
+            "language": "EL",
+            "text": "μεταξοτυπία"
+          },
+          {
+            "language": "HU",
+            "text": "Szitanyomás"
+          },
+          {
+            "language": "IT",
+            "text": "serigrafia"
+          },
+          {
+            "language": "PL",
+            "text": "sitodruk"
+          },
+          {
+            "language": "NL",
+            "text": "zeefdruk"
+          },
+          {
+            "language": "PT",
+            "text": "Serigrafia"
+          },
+          {
+            "language": "RU",
+            "text": "Шелкотрафаретная печать"
+          },
+          {
+            "language": "ES",
+            "text": "serigrafía"
+          },
+          {
+            "language": "SV",
+            "text": "Screentryck"
+          }
+        ]
+      },
+      {
+        "id": "S3",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Siebdruck"
+          },
+          {
+            "language": "EN",
+            "text": "screen printing"
+          },
+          {
+            "language": "FR",
+            "text": "sérigraphie"
+          },
+          {
+            "language": "EL",
+            "text": "μεταξοτυπία"
+          },
+          {
+            "language": "HU",
+            "text": "Szitanyomás"
+          },
+          {
+            "language": "IT",
+            "text": "serigrafia"
+          },
+          {
+            "language": "PL",
+            "text": "sitodruk"
+          },
+          {
+            "language": "NL",
+            "text": "zeefdruk"
+          },
+          {
+            "language": "PT",
+            "text": "Serigrafia"
+          },
+          {
+            "language": "RU",
+            "text": "Шелкотрафаретная печать"
+          },
+          {
+            "language": "ES",
+            "text": "serigrafía"
+          },
+          {
+            "language": "SV",
+            "text": "Screentryck"
+          }
+        ]
+      },
+      {
+        "id": "E",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Bestickung"
+          },
+          {
+            "language": "EN",
+            "text": "embroidery"
+          },
+          {
+            "language": "FR",
+            "text": "broderie"
+          },
+          {
+            "language": "EL",
+            "text": "κέντημα"
+          },
+          {
+            "language": "HU",
+            "text": "Hímzés"
+          },
+          {
+            "language": "IT",
+            "text": "ricamo"
+          },
+          {
+            "language": "PL",
+            "text": "haft"
+          },
+          {
+            "language": "NL",
+            "text": "borduring"
+          },
+          {
+            "language": "PT",
+            "text": "Bordado"
+          },
+          {
+            "language": "RU",
+            "text": "Вышивка"
+          },
+          {
+            "language": "ES",
+            "text": "bordado"
+          },
+          {
+            "language": "SV",
+            "text": "brodyr"
+          }
+        ]
+      },
+      {
+        "id": "L",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Lasergravur"
+          },
+          {
+            "language": "EN",
+            "text": "laser engraving (do not use)"
+          },
+          {
+            "language": "FR",
+            "text": "gravure laser"
+          },
+          {
+            "language": "EL",
+            "text": "εγχάραξη με λέιζερ"
+          },
+          {
+            "language": "HU",
+            "text": "Lézergravírozás"
+          },
+          {
+            "language": "IT",
+            "text": "laser"
+          },
+          {
+            "language": "PL",
+            "text": "grawerowanie"
+          },
+          {
+            "language": "NL",
+            "text": "lasergravering"
+          },
+          {
+            "language": "PT",
+            "text": "Laser"
+          },
+          {
+            "language": "RU",
+            "text": "Лазерная гравировка"
+          },
+          {
+            "language": "ES",
+            "text": "grabado a láser"
+          },
+          {
+            "language": "SV",
+            "text": "lasergravyr"
+          }
+        ]
+      },
+      {
+        "id": "B",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Prägung"
+          },
+          {
+            "language": "EN",
+            "text": "embossing"
+          },
+          {
+            "language": "FR",
+            "text": "embossage"
+          },
+          {
+            "language": "EL",
+            "text": "ανάγλυφο"
+          },
+          {
+            "language": "HU",
+            "text": "Dombornyomás"
+          },
+          {
+            "language": "IT",
+            "text": "stampa a rilievo"
+          },
+          {
+            "language": "PL",
+            "text": "tłoczenie"
+          },
+          {
+            "language": "NL",
+            "text": "blinddruk"
+          },
+          {
+            "language": "PT",
+            "text": "Impressão em relevo"
+          },
+          {
+            "language": "RU",
+            "text": "Тиснение"
+          },
+          {
+            "language": "ES",
+            "text": "grabado con bajo relieve"
+          },
+          {
+            "language": "SV",
+            "text": "embossing / prägling"
+          }
+        ]
+      },
+      {
+        "id": "T1",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Transferdruck"
+          },
+          {
+            "language": "EN",
+            "text": "transfer printing"
+          },
+          {
+            "language": "FR",
+            "text": "marquage par transfert"
+          },
+          {
+            "language": "EL",
+            "text": "θερμοτυπία"
+          },
+          {
+            "language": "HU",
+            "text": "Transzfernyomás"
+          },
+          {
+            "language": "IT",
+            "text": "transfer"
+          },
+          {
+            "language": "PL",
+            "text": "transfer"
+          },
+          {
+            "language": "NL",
+            "text": "transferdruk"
+          },
+          {
+            "language": "PT",
+            "text": "Transfer"
+          },
+          {
+            "language": "RU",
+            "text": "Термоперенос"
+          },
+          {
+            "language": "ES",
+            "text": "transfer"
+          },
+          {
+            "language": "SV",
+            "text": "transfertryck"
+          }
+        ]
+      },
+      {
+        "id": "DO",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Doming"
+          },
+          {
+            "language": "EN",
+            "text": "doming"
+          },
+          {
+            "language": "FR",
+            "text": "doming"
+          },
+          {
+            "language": "EL",
+            "text": "αυτοκόλλητο σμάλτο (doming)"
+          },
+          {
+            "language": "HU",
+            "text": "Műgyanta matricázás"
+          },
+          {
+            "language": "IT",
+            "text": "stampa a bolla"
+          },
+          {
+            "language": "PL",
+            "text": "naklejki 3D"
+          },
+          {
+            "language": "NL",
+            "text": "doming"
+          },
+          {
+            "language": "PT",
+            "text": "Adesivo com Gota de Resina"
+          },
+          {
+            "language": "RU",
+            "text": "Конгревное тиснение"
+          },
+          {
+            "language": "ES",
+            "text": "adhesivo con gota de resina"
+          },
+          {
+            "language": "SV",
+            "text": "doming / logotops"
+          }
+        ]
+      },
+      {
+        "id": "DO1",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Doming"
+          },
+          {
+            "language": "EN",
+            "text": "doming"
+          },
+          {
+            "language": "FR",
+            "text": "doming"
+          },
+          {
+            "language": "EL",
+            "text": "αυτοκόλλητο σμάλτο (doming"
+          },
+          {
+            "language": "HU",
+            "text": "mugyanta matrica"
+          },
+          {
+            "language": "IT",
+            "text": "stampa a bolla"
+          },
+          {
+            "language": "PL",
+            "text": "naklejki 3D"
+          },
+          {
+            "language": "NL",
+            "text": "doming"
+          },
+          {
+            "language": "PT",
+            "text": "Adesivo com Gota de Resina"
+          },
+          {
+            "language": "RU",
+            "text": "Заливка смолой"
+          },
+          {
+            "language": "ES",
+            "text": "adhesivo con gota de resin"
+          },
+          {
+            "language": "SV",
+            "text": "doming / logotops"
+          }
+        ]
+      },
+      {
+        "id": "DO2",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Doming"
+          },
+          {
+            "language": "EN",
+            "text": "doming"
+          },
+          {
+            "language": "FR",
+            "text": "doming"
+          },
+          {
+            "language": "EL",
+            "text": "αυτοκόλλητο σμάλτο (doming"
+          },
+          {
+            "language": "HU",
+            "text": "mugyanta matrica"
+          },
+          {
+            "language": "IT",
+            "text": "stampa a bolla"
+          },
+          {
+            "language": "PL",
+            "text": "naklejki 3D"
+          },
+          {
+            "language": "NL",
+            "text": "doming"
+          },
+          {
+            "language": "PT",
+            "text": "Adesivo com Gota de Resina"
+          },
+          {
+            "language": "RU",
+            "text": "Заливка смолой"
+          },
+          {
+            "language": "ES",
+            "text": "adhesivo con gota de resin"
+          },
+          {
+            "language": "SV",
+            "text": "doming / logotops"
+          }
+        ]
+      },
+      {
+        "id": "DL",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Digital Label"
+          },
+          {
+            "language": "EN",
+            "text": "Digital Label"
+          },
+          {
+            "language": "FR",
+            "text": "Etiquette numérique"
+          },
+          {
+            "language": "EL",
+            "text": "Digital Label"
+          },
+          {
+            "language": "HU",
+            "text": "Digitális címke"
+          },
+          {
+            "language": "IT",
+            "text": "Etichette digitali"
+          },
+          {
+            "language": "PL",
+            "text": "Etykieta cyfrowa"
+          },
+          {
+            "language": "NL",
+            "text": "Sticker"
+          },
+          {
+            "language": "PT",
+            "text": "Etiqueta digital"
+          },
+          {
+            "language": "RU",
+            "text": "Цифровая Этикетка"
+          },
+          {
+            "language": "ES",
+            "text": "Etiqueta digital"
+          },
+          {
+            "language": "SV",
+            "text": "Digital Dekal"
+          }
+        ]
+      },
+      {
+        "id": "PH",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Papier"
+          },
+          {
+            "language": "EN",
+            "text": "Paper"
+          },
+          {
+            "language": "FR",
+            "text": "Papier"
+          },
+          {
+            "language": "EL",
+            "text": "Χαρτί"
+          },
+          {
+            "language": "HU",
+            "text": "Fénymásolás"
+          },
+          {
+            "language": "IT",
+            "text": "Carta"
+          },
+          {
+            "language": "PL",
+            "text": "Papier"
+          },
+          {
+            "language": "NL",
+            "text": "Paper"
+          },
+          {
+            "language": "PT",
+            "text": "Papel"
+          },
+          {
+            "language": "RU",
+            "text": "Бумага"
+          },
+          {
+            "language": "ES",
+            "text": "Papel"
+          },
+          {
+            "language": "SV",
+            "text": "Papper"
+          }
+        ]
+      },
+      {
+        "id": "TC",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "TransferKeramik"
+          },
+          {
+            "language": "EN",
+            "text": "Ceramics transfer"
+          },
+          {
+            "language": "FR",
+            "text": "Transfert céramique"
+          },
+          {
+            "language": "EL",
+            "text": "Μεταφορά σε κεραμικά"
+          },
+          {
+            "language": "HU",
+            "text": "Transzfernyomás kerámiafelü"
+          },
+          {
+            "language": "IT",
+            "text": "Transfer su ceramica"
+          },
+          {
+            "language": "PL",
+            "text": "Transfer na Ceramice"
+          },
+          {
+            "language": "NL",
+            "text": "Ceramics transfer"
+          },
+          {
+            "language": "PT",
+            "text": "Transfer Cerâmico"
+          },
+          {
+            "language": "RU",
+            "text": "Деколь"
+          },
+          {
+            "language": "SV",
+            "text": "Keramisk transfer"
+          }
+        ]
+      },
+      {
+        "id": "TD",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "TransferDigital"
+          },
+          {
+            "language": "EN",
+            "text": "Digital transfer"
+          },
+          {
+            "language": "FR",
+            "text": "Numérique"
+          },
+          {
+            "language": "EL",
+            "text": "Ψηφιακή μεταφορά"
+          },
+          {
+            "language": "HU",
+            "text": "Digitális transzfernyomás"
+          },
+          {
+            "language": "IT",
+            "text": "Transfer digitale"
+          },
+          {
+            "language": "PL",
+            "text": "Transfer cyfrowy"
+          },
+          {
+            "language": "NL",
+            "text": "Digital transfer"
+          },
+          {
+            "language": "PT",
+            "text": "Transfer Digital"
+          },
+          {
+            "language": "RU",
+            "text": "Цифровой термоперенос"
+          },
+          {
+            "language": "SV",
+            "text": "Digital transfer"
+          }
+        ]
+      },
+      {
+        "id": "PD",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Druck Digital"
+          },
+          {
+            "language": "EN",
+            "text": "Print digital"
+          },
+          {
+            "language": "FR",
+            "text": "Marquage Numérique"
+          },
+          {
+            "language": "EL",
+            "text": "Ψηφιακή εκτύπωση"
+          },
+          {
+            "language": "HU",
+            "text": "Digitális nyomás"
+          },
+          {
+            "language": "IT",
+            "text": "Stampa digitale"
+          },
+          {
+            "language": "PL",
+            "text": "Druk cyfrowy"
+          },
+          {
+            "language": "NL",
+            "text": "Print digital"
+          },
+          {
+            "language": "PT",
+            "text": "Impressão Digital"
+          },
+          {
+            "language": "RU",
+            "text": "Цифровая печать"
+          },
+          {
+            "language": "SV",
+            "text": "Digitalt tryck"
+          }
+        ]
+      },
+      {
+        "id": "PDT",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Druck Digital"
+          },
+          {
+            "language": "EN",
+            "text": "Print digital textile"
+          },
+          {
+            "language": "FR",
+            "text": "Marquage Numérique"
+          },
+          {
+            "language": "EL",
+            "text": "Ψηφιακή εκτύπωση"
+          },
+          {
+            "language": "HU",
+            "text": "Digitális nyomás"
+          },
+          {
+            "language": "IT",
+            "text": "Stampa digitale"
+          },
+          {
+            "language": "PL",
+            "text": "Druk cyfrowy"
+          },
+          {
+            "language": "NL",
+            "text": "Print digital"
+          },
+          {
+            "language": "PT",
+            "text": "Impressão Digital"
+          },
+          {
+            "language": "RU",
+            "text": "Цифровая печать"
+          },
+          {
+            "language": "SV",
+            "text": "Digitalt tryck"
+          }
+        ]
+      },
+      {
+        "id": "W1",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Tampondruck"
+          },
+          {
+            "language": "EN",
+            "text": "pad printing"
+          },
+          {
+            "language": "FR",
+            "text": "tampographie"
+          },
+          {
+            "language": "EL",
+            "text": "ταμπονοτυπία"
+          },
+          {
+            "language": "HU",
+            "text": "Tamponnyomás"
+          },
+          {
+            "language": "IT",
+            "text": "tampografia"
+          },
+          {
+            "language": "PL",
+            "text": "tampon"
+          },
+          {
+            "language": "NL",
+            "text": "tampondruk"
+          },
+          {
+            "language": "PT",
+            "text": "Tampografia"
+          },
+          {
+            "language": "RU",
+            "text": "Тампопечать"
+          },
+          {
+            "language": "ES",
+            "text": "tampografía"
+          },
+          {
+            "language": "SV",
+            "text": "tampotryck"
+          }
+        ]
+      },
+      {
+        "id": "LY",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Lasergravur (YAG)"
+          },
+          {
+            "language": "EN",
+            "text": "laser engraving (YAG)"
+          },
+          {
+            "language": "FR",
+            "text": "gravure laser (YAG)"
+          },
+          {
+            "language": "EL",
+            "text": "εγχάραξη με λέιζερ (YAG)"
+          },
+          {
+            "language": "HU",
+            "text": "Lézergravírozás (YAG)"
+          },
+          {
+            "language": "IT",
+            "text": "laser (YAG)"
+          },
+          {
+            "language": "PL",
+            "text": "grawerowanie (YAG)"
+          },
+          {
+            "language": "NL",
+            "text": "lasergravering (YAG)"
+          },
+          {
+            "language": "PT",
+            "text": "Laser (YAG)"
+          },
+          {
+            "language": "RU",
+            "text": "Лазерная гравировка (YAG)"
+          },
+          {
+            "language": "ES",
+            "text": "grabado a láser (YAG)"
+          },
+          {
+            "language": "SV",
+            "text": "lasergravyr (YAG)"
+          }
+        ]
+      },
+      {
+        "id": "B",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Prägung"
+          },
+          {
+            "language": "EN",
+            "text": "embossing"
+          },
+          {
+            "language": "FR",
+            "text": "embossage"
+          },
+          {
+            "language": "HU",
+            "text": "Dombornyomás"
+          },
+          {
+            "language": "IT",
+            "text": "stampa a rilievo"
+          },
+          {
+            "language": "DA",
+            "text": "embossing/prægning"
+          },
+          {
+            "language": "PL",
+            "text": "tłoczenie"
+          },
+          {
+            "language": "NL",
+            "text": "blinddruk"
+          },
+          {
+            "language": "PT",
+            "text": "Impressão em relevo"
+          },
+          {
+            "language": "RU",
+            "text": "Тиснение"
+          },
+          {
+            "language": "ES",
+            "text": "grabado con bajo relieve"
+          },
+          {
+            "language": "SV",
+            "text": "embossing / prägling"
+          }
+        ]
+      },
+      {
+        "id": "BP",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Button Druck"
+          },
+          {
+            "language": "EN",
+            "text": "button print"
+          },
+          {
+            "language": "FR",
+            "text": "Marquage bouton"
+          },
+          {
+            "language": "HU",
+            "text": "Kitűző nyomtatása"
+          },
+          {
+            "language": "IT",
+            "text": "Stampa su spilla a bottone"
+          },
+          {
+            "language": "DA",
+            "text": "knap print"
+          },
+          {
+            "language": "PL",
+            "text": "nadruk na buttonie"
+          },
+          {
+            "language": "NL",
+            "text": "button druk"
+          },
+          {
+            "language": "PT",
+            "text": "Impressão Pin"
+          },
+          {
+            "language": "RU",
+            "text": "кнопок BP"
+          },
+          {
+            "language": "ES",
+            "text": "impresión chapa"
+          },
+          {
+            "language": "SV",
+            "text": "knapp tryck"
+          }
+        ]
+      },
+      {
+        "id": "DI",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Digitaler Papiereinleger"
+          },
+          {
+            "language": "EN",
+            "text": "Digital inlay"
+          },
+          {
+            "language": "FR",
+            "text": "numérique "
+          },
+          {
+            "language": "HU",
+            "text": "Digitális betétlap"
+          },
+          {
+            "language": "IT",
+            "text": "Digitale su carta"
+          },
+          {
+            "language": "DA",
+            "text": "Digitalt indlæg"
+          },
+          {
+            "language": "PL",
+            "text": "Etykieta cyfrowa"
+          },
+          {
+            "language": "NL",
+            "text": "papieren inlay"
+          },
+          {
+            "language": "PT",
+            "text": "Papel Digital"
+          },
+          {
+            "language": "RU",
+            "text": "цифровой шелкотрансфер"
+          },
+          {
+            "language": "ES",
+            "text": "Papel Digital"
+          },
+          {
+            "language": "SV",
+            "text": "Digitaltryckt iläggskort"
+          }
+        ]
+      },
+      {
+        "id": "DL",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Digital Label"
+          },
+          {
+            "language": "EN",
+            "text": "Digital Label"
+          },
+          {
+            "language": "FR",
+            "text": "Etiquette numérique"
+          },
+          {
+            "language": "HU",
+            "text": "Digitális címke"
+          },
+          {
+            "language": "IT",
+            "text": "Etichette digitali"
+          },
+          {
+            "language": "DA",
+            "text": "Digital Label"
+          },
+          {
+            "language": "PL",
+            "text": "Etykieta cyfrowa"
+          },
+          {
+            "language": "NL",
+            "text": "Sticker"
+          },
+          {
+            "language": "PT",
+            "text": "Etiqueta digital"
+          },
+          {
+            "language": "RU",
+            "text": "Цифровая Этикетка"
+          },
+          {
+            "language": "ES",
+            "text": "Etiqueta digital"
+          },
+          {
+            "language": "SV",
+            "text": "Digital Dekal"
+          }
+        ]
+      },
+      {
+        "id": "DO",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Doming"
+          },
+          {
+            "language": "EN",
+            "text": "doming"
+          },
+          {
+            "language": "FR",
+            "text": "doming"
+          },
+          {
+            "language": "HU",
+            "text": "Műgyanta matricázás"
+          },
+          {
+            "language": "IT",
+            "text": "stampa a bolla"
+          },
+          {
+            "language": "DA",
+            "text": "doming"
+          },
+          {
+            "language": "PL",
+            "text": "naklejki 3D"
+          },
+          {
+            "language": "NL",
+            "text": "doming"
+          },
+          {
+            "language": "PT",
+            "text": "Adesivo com Gota de Resina"
+          },
+          {
+            "language": "RU",
+            "text": "Конгревное тиснение"
+          },
+          {
+            "language": "ES",
+            "text": "adhesivo con gota de resina"
+          },
+          {
+            "language": "SV",
+            "text": "doming / logotops"
+          }
+        ]
+      },
+      {
+        "id": "DO1",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Doming"
+          },
+          {
+            "language": "EN",
+            "text": "doming"
+          },
+          {
+            "language": "FR",
+            "text": "Doming"
+          },
+          {
+            "language": "HU",
+            "text": "Műgyanta matricázás"
+          },
+          {
+            "language": "IT",
+            "text": "Stampa a bolla"
+          },
+          {
+            "language": "DA",
+            "text": "doming"
+          },
+          {
+            "language": "PL",
+            "text": "Naklejki 3D"
+          },
+          {
+            "language": "NL",
+            "text": "Doming"
+          },
+          {
+            "language": "PT",
+            "text": "Adesivo com Gota de Resina"
+          },
+          {
+            "language": "RU",
+            "text": "Конгревное тиснение"
+          },
+          {
+            "language": "ES",
+            "text": "Adhesivo con gota de resin"
+          },
+          {
+            "language": "SV",
+            "text": "doming / logotops"
+          }
+        ]
+      },
+      {
+        "id": "DO2",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Doming"
+          },
+          {
+            "language": "EN",
+            "text": "doming"
+          },
+          {
+            "language": "FR",
+            "text": "Doming"
+          },
+          {
+            "language": "HU",
+            "text": "Műgyanta matricázás"
+          },
+          {
+            "language": "IT",
+            "text": "Stampa a bolla"
+          },
+          {
+            "language": "DA",
+            "text": "doming"
+          },
+          {
+            "language": "PL",
+            "text": "Naklejki 3D"
+          },
+          {
+            "language": "NL",
+            "text": "Doming"
+          },
+          {
+            "language": "PT",
+            "text": "Adesivo com Gota de Resina"
+          },
+          {
+            "language": "RU",
+            "text": "Цифровая печать"
+          },
+          {
+            "language": "ES",
+            "text": "Adhesivo con gota de resin"
+          },
+          {
+            "language": "SV",
+            "text": "doming / logotops"
+          }
+        ]
+      },
+      {
+        "id": "E",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Bestickung"
+          },
+          {
+            "language": "EN",
+            "text": "embroidery"
+          },
+          {
+            "language": "FR",
+            "text": "broderie"
+          },
+          {
+            "language": "HU",
+            "text": "Hímzés"
+          },
+          {
+            "language": "IT",
+            "text": "ricamo"
+          },
+          {
+            "language": "DA",
+            "text": "brodering"
+          },
+          {
+            "language": "PL",
+            "text": "haft"
+          },
+          {
+            "language": "NL",
+            "text": "borduring"
+          },
+          {
+            "language": "PT",
+            "text": "Bordado"
+          },
+          {
+            "language": "RU",
+            "text": "Вышивка"
+          },
+          {
+            "language": "ES",
+            "text": "bordado"
+          },
+          {
+            "language": "SV",
+            "text": "brodyr"
+          }
+        ]
+      },
+      {
+        "id": "L",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Lasergravur"
+          },
+          {
+            "language": "EN",
+            "text": "laser engraving"
+          },
+          {
+            "language": "FR",
+            "text": "gravure laser"
+          },
+          {
+            "language": "HU",
+            "text": "Lézergravírozás"
+          },
+          {
+            "language": "IT",
+            "text": "laser"
+          },
+          {
+            "language": "DA",
+            "text": "lasergravering"
+          },
+          {
+            "language": "PL",
+            "text": "grawerowanie"
+          },
+          {
+            "language": "NL",
+            "text": "lasergravering"
+          },
+          {
+            "language": "PT",
+            "text": "Laser"
+          },
+          {
+            "language": "RU",
+            "text": "Лазерная гравировка"
+          },
+          {
+            "language": "ES",
+            "text": "grabado a láser"
+          },
+          {
+            "language": "SV",
+            "text": "lasergravyr"
+          }
+        ]
+      },
+      {
+        "id": "L0",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Lasergravur"
+          },
+          {
+            "language": "EN",
+            "text": "laser engraving"
+          },
+          {
+            "language": "FR",
+            "text": "gravure laser"
+          },
+          {
+            "language": "HU",
+            "text": "Lézergravírozás"
+          },
+          {
+            "language": "IT",
+            "text": "laser"
+          },
+          {
+            "language": "DA",
+            "text": "lasergravering"
+          },
+          {
+            "language": "PL",
+            "text": "grawerowanie"
+          },
+          {
+            "language": "NL",
+            "text": "lasergravering"
+          },
+          {
+            "language": "PT",
+            "text": "Laser"
+          },
+          {
+            "language": "RU",
+            "text": "Лазерная гравировка"
+          },
+          {
+            "language": "ES",
+            "text": "grabado a láser"
+          },
+          {
+            "language": "SV",
+            "text": "lasergravyr"
+          }
+        ]
+      },
+      {
+        "id": "L1",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Lasergravur"
+          },
+          {
+            "language": "EN",
+            "text": "laser engraving"
+          },
+          {
+            "language": "FR",
+            "text": "gravure laser"
+          },
+          {
+            "language": "HU",
+            "text": "Lézergravírozás"
+          },
+          {
+            "language": "IT",
+            "text": "laser"
+          },
+          {
+            "language": "DA",
+            "text": "lasergravering"
+          },
+          {
+            "language": "PL",
+            "text": "grawerowanie"
+          },
+          {
+            "language": "NL",
+            "text": "lasergravering"
+          },
+          {
+            "language": "PT",
+            "text": "Laser"
+          },
+          {
+            "language": "RU",
+            "text": "Лазерная гравировка"
+          },
+          {
+            "language": "ES",
+            "text": "grabado a láser"
+          },
+          {
+            "language": "SV",
+            "text": "lasergravyr"
+          }
+        ]
+      },
+      {
+        "id": "L2",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Lasergravur"
+          },
+          {
+            "language": "EN",
+            "text": "laser engraving"
+          },
+          {
+            "language": "FR",
+            "text": "gravure laser"
+          },
+          {
+            "language": "HU",
+            "text": "Lézergravírozás"
+          },
+          {
+            "language": "IT",
+            "text": "laser"
+          },
+          {
+            "language": "DA",
+            "text": "lasergravering"
+          },
+          {
+            "language": "PL",
+            "text": "grawerowanie"
+          },
+          {
+            "language": "NL",
+            "text": "lasergravering"
+          },
+          {
+            "language": "PT",
+            "text": "Laser"
+          },
+          {
+            "language": "RU",
+            "text": "Лазерная гравировка"
+          },
+          {
+            "language": "ES",
+            "text": "grabado a láser"
+          },
+          {
+            "language": "SV",
+            "text": "lasergravyr"
+          }
+        ]
+      },
+      {
+        "id": "L3",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Lasergravur"
+          },
+          {
+            "language": "EN",
+            "text": "laser engraving"
+          },
+          {
+            "language": "FR",
+            "text": "gravure laser"
+          },
+          {
+            "language": "HU",
+            "text": "Lézergravírozás"
+          },
+          {
+            "language": "IT",
+            "text": "laser"
+          },
+          {
+            "language": "DA",
+            "text": "lasergravering"
+          },
+          {
+            "language": "PL",
+            "text": "grawerowanie"
+          },
+          {
+            "language": "NL",
+            "text": "lasergravering"
+          },
+          {
+            "language": "PT",
+            "text": "Laser"
+          },
+          {
+            "language": "RU",
+            "text": "Лазерная гравировка"
+          },
+          {
+            "language": "ES",
+            "text": "grabado a láser"
+          },
+          {
+            "language": "SV",
+            "text": "lasergravyr"
+          }
+        ]
+      },
+      {
+        "id": "LC",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Lasergravur (CO2)"
+          },
+          {
+            "language": "EN",
+            "text": "laser engraving (CO2)"
+          },
+          {
+            "language": "FR",
+            "text": "gravure laser (CO2)"
+          },
+          {
+            "language": "EL",
+            "text": "εγχάραξη με λέιζερ (CO2)"
+          },
+          {
+            "language": "HU",
+            "text": "Lézergravírozás (CO2)"
+          },
+          {
+            "language": "IT",
+            "text": "laser (CO2)"
+          },
+          {
+            "language": "DA",
+            "text": "lasergravering (CO2)"
+          },
+          {
+            "language": "PL",
+            "text": "grawerowanie (CO2)"
+          },
+          {
+            "language": "NL",
+            "text": "lasergravering (CO2)"
+          },
+          {
+            "language": "PT",
+            "text": "Laser (CO2)"
+          },
+          {
+            "language": "RU",
+            "text": "Лазерная гравировка (CO2)"
+          },
+          {
+            "language": "ES",
+            "text": "grabado a láser (CO2)"
+          },
+          {
+            "language": "SV",
+            "text": "lasergravyr (CO2)"
+          }
+        ]
+      },
+      {
+        "id": "LY",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Lasergravur (YAG)"
+          },
+          {
+            "language": "EN",
+            "text": "laser engraving (YAG)"
+          },
+          {
+            "language": "FR",
+            "text": "gravure laser (YAG)"
+          },
+          {
+            "language": "HU",
+            "text": "Lézergravírozás (YAG)"
+          },
+          {
+            "language": "IT",
+            "text": "laser (YAG)"
+          },
+          {
+            "language": "DA",
+            "text": "lasergravering (YAG)"
+          },
+          {
+            "language": "PL",
+            "text": "grawerowanie (YAG)"
+          },
+          {
+            "language": "NL",
+            "text": "lasergravering (YAG)"
+          },
+          {
+            "language": "PT",
+            "text": "Laser (YAG)"
+          },
+          {
+            "language": "RU",
+            "text": "Лазерная гравировка (YAG)"
+          },
+          {
+            "language": "ES",
+            "text": "grabado a láser (YAG)"
+          },
+          {
+            "language": "SV",
+            "text": "lasergravyr (YAG)"
+          }
+        ]
+      },
+      {
+        "id": "P0",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Tampondruck"
+          },
+          {
+            "language": "EN",
+            "text": "pad printing"
+          },
+          {
+            "language": "FR",
+            "text": "tampographie"
+          },
+          {
+            "language": "HU",
+            "text": "Tamponnyomás"
+          },
+          {
+            "language": "IT",
+            "text": "tampografia"
+          },
+          {
+            "language": "DA",
+            "text": "tampon tryk"
+          },
+          {
+            "language": "PL",
+            "text": "tampon"
+          },
+          {
+            "language": "NL",
+            "text": "tampondruk"
+          },
+          {
+            "language": "PT",
+            "text": "Tampografia"
+          },
+          {
+            "language": "RU",
+            "text": "Тампопечать"
+          },
+          {
+            "language": "ES",
+            "text": "tampografía"
+          },
+          {
+            "language": "SV",
+            "text": "tampotryck"
+          }
+        ]
+      },
+      {
+        "id": "P1",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Tampondruck"
+          },
+          {
+            "language": "EN",
+            "text": "pad printing"
+          },
+          {
+            "language": "FR",
+            "text": "tampographie"
+          },
+          {
+            "language": "HU",
+            "text": "Tamponnyomás"
+          },
+          {
+            "language": "IT",
+            "text": "tampografia"
+          },
+          {
+            "language": "DA",
+            "text": "tampon tryk"
+          },
+          {
+            "language": "PL",
+            "text": "tampon"
+          },
+          {
+            "language": "NL",
+            "text": "tampondruk"
+          },
+          {
+            "language": "PT",
+            "text": "Tampografia"
+          },
+          {
+            "language": "RU",
+            "text": "Тампопечать"
+          },
+          {
+            "language": "ES",
+            "text": "tampografía"
+          },
+          {
+            "language": "SV",
+            "text": "tampotryck"
+          }
+        ]
+      },
+      {
+        "id": "P2",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Tampondruck"
+          },
+          {
+            "language": "EN",
+            "text": "pad printing"
+          },
+          {
+            "language": "FR",
+            "text": "tampographie"
+          },
+          {
+            "language": "HU",
+            "text": "Tamponnyomás"
+          },
+          {
+            "language": "IT",
+            "text": "tampografia"
+          },
+          {
+            "language": "DA",
+            "text": "tampon tryk"
+          },
+          {
+            "language": "PL",
+            "text": "tampon"
+          },
+          {
+            "language": "NL",
+            "text": "tampondruk"
+          },
+          {
+            "language": "PT",
+            "text": "Tampografia"
+          },
+          {
+            "language": "RU",
+            "text": "Тампопечать"
+          },
+          {
+            "language": "ES",
+            "text": "tampografía"
+          },
+          {
+            "language": "SV",
+            "text": "tampotryck"
+          }
+        ]
+      },
+      {
+        "id": "P3",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Tampondruck"
+          },
+          {
+            "language": "EN",
+            "text": "pad printing"
+          },
+          {
+            "language": "FR",
+            "text": "tampographie"
+          },
+          {
+            "language": "HU",
+            "text": "Tamponnyomás"
+          },
+          {
+            "language": "IT",
+            "text": "tampografia"
+          },
+          {
+            "language": "DA",
+            "text": "tampon tryk"
+          },
+          {
+            "language": "PL",
+            "text": "tampon"
+          },
+          {
+            "language": "NL",
+            "text": "tampondruk"
+          },
+          {
+            "language": "PT",
+            "text": "Tampografia"
+          },
+          {
+            "language": "RU",
+            "text": "Тампопечать"
+          },
+          {
+            "language": "ES",
+            "text": "tampografía"
+          },
+          {
+            "language": "SV",
+            "text": "tampotryck"
+          }
+        ]
+      },
+      {
+        "id": "P4",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Tampondruck"
+          },
+          {
+            "language": "EN",
+            "text": "pad printing"
+          },
+          {
+            "language": "FR",
+            "text": "tampographie"
+          },
+          {
+            "language": "HU",
+            "text": "Tamponnyomás"
+          },
+          {
+            "language": "IT",
+            "text": "tampografia"
+          },
+          {
+            "language": "DA",
+            "text": "tampon tryk"
+          },
+          {
+            "language": "PL",
+            "text": "tampon"
+          },
+          {
+            "language": "NL",
+            "text": "tampondruk"
+          },
+          {
+            "language": "PT",
+            "text": "Tampografia"
+          },
+          {
+            "language": "RU",
+            "text": "Тампопечать"
+          },
+          {
+            "language": "ES",
+            "text": "tampografía"
+          },
+          {
+            "language": "SV",
+            "text": "tampotryck"
+          }
+        ]
+      },
+      {
+        "id": "P5",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Tampondruck"
+          },
+          {
+            "language": "EN",
+            "text": "pad printing"
+          },
+          {
+            "language": "FR",
+            "text": "tampographie"
+          },
+          {
+            "language": "HU",
+            "text": "Tamponnyomás"
+          },
+          {
+            "language": "IT",
+            "text": "tampografia"
+          },
+          {
+            "language": "DA",
+            "text": "tampon tryk"
+          },
+          {
+            "language": "PL",
+            "text": "tampon"
+          },
+          {
+            "language": "NL",
+            "text": "tampondruk"
+          },
+          {
+            "language": "PT",
+            "text": "Tampografia"
+          },
+          {
+            "language": "RU",
+            "text": "Тампопечать"
+          },
+          {
+            "language": "ES",
+            "text": "tampografía"
+          },
+          {
+            "language": "SV",
+            "text": "tampotryck"
+          }
+        ]
+      },
+      {
+        "id": "PD",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Druck Digital"
+          },
+          {
+            "language": "EN",
+            "text": "Print digital"
+          },
+          {
+            "language": "FR",
+            "text": "Marquage Numérique"
+          },
+          {
+            "language": "HU",
+            "text": "Digitális nyomás"
+          },
+          {
+            "language": "IT",
+            "text": "Stampa digitale"
+          },
+          {
+            "language": "DA",
+            "text": "Print digital"
+          },
+          {
+            "language": "PL",
+            "text": "Druk cyfrowy"
+          },
+          {
+            "language": "NL",
+            "text": "Print digital"
+          },
+          {
+            "language": "PT",
+            "text": "Impressão Digital"
+          },
+          {
+            "language": "RU",
+            "text": "Цифровая печать"
+          },
+          {
+            "language": "ES",
+            "text": "Impresión Digital"
+          },
+          {
+            "language": "SV",
+            "text": "Digitalt tryck"
+          }
+        ]
+      },
+      {
+        "id": "PD0",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Druck Digital 0"
+          },
+          {
+            "language": "EN",
+            "text": "Print digital 0"
+          },
+          {
+            "language": "FR",
+            "text": "Marquage Numérique 0"
+          },
+          {
+            "language": "HU",
+            "text": "Digitális nyomás 0"
+          },
+          {
+            "language": "IT",
+            "text": "Stampa digitale 0"
+          },
+          {
+            "language": "DA",
+            "text": "Print digital 0"
+          },
+          {
+            "language": "PL",
+            "text": "Druk cyfrowy 0"
+          },
+          {
+            "language": "NL",
+            "text": "Print digital 0"
+          },
+          {
+            "language": "PT",
+            "text": "Impressão Digital 0"
+          },
+          {
+            "language": "RU",
+            "text": "Цифровая печать 0"
+          },
+          {
+            "language": "ES",
+            "text": "Impresión Digital 0"
+          },
+          {
+            "language": "SV",
+            "text": "Digitalt tryck 0"
+          }
+        ]
+      },
+      {
+        "id": "PD1",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Druck Digital 1"
+          },
+          {
+            "language": "EN",
+            "text": "Print digital 1"
+          },
+          {
+            "language": "FR",
+            "text": "Marquage Numérique 1"
+          },
+          {
+            "language": "HU",
+            "text": "Digitális nyomás 1"
+          },
+          {
+            "language": "IT",
+            "text": "Stampa digitale 1"
+          },
+          {
+            "language": "DA",
+            "text": "Print digital 1"
+          },
+          {
+            "language": "PL",
+            "text": "Druk cyfrowy 1"
+          },
+          {
+            "language": "NL",
+            "text": "Print digital 1"
+          },
+          {
+            "language": "PT",
+            "text": "Impressão Digital 1"
+          },
+          {
+            "language": "RU",
+            "text": "Цифровая печать 1"
+          },
+          {
+            "language": "ES",
+            "text": "Impresión Digital 1"
+          },
+          {
+            "language": "SV",
+            "text": "Digitalt tryck 1"
+          }
+        ]
+      },
+      {
+        "id": "PD2",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Druck Digital 2"
+          },
+          {
+            "language": "EN",
+            "text": "Print digital 2"
+          },
+          {
+            "language": "FR",
+            "text": "Marquage Numérique 2"
+          },
+          {
+            "language": "HU",
+            "text": "Digitális nyomás 2"
+          },
+          {
+            "language": "IT",
+            "text": "Stampa digitale 2"
+          },
+          {
+            "language": "DA",
+            "text": "Print digital 2"
+          },
+          {
+            "language": "PL",
+            "text": "Druk cyfrowy 2"
+          },
+          {
+            "language": "NL",
+            "text": "Print digital 2"
+          },
+          {
+            "language": "PT",
+            "text": "Impressão Digital 2"
+          },
+          {
+            "language": "RU",
+            "text": "Цифровая печать 2"
+          },
+          {
+            "language": "ES",
+            "text": "Impresión Digital 2"
+          },
+          {
+            "language": "SV",
+            "text": "Digitalt tryck 2"
+          }
+        ]
+      },
+      {
+        "id": "PD3",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Druck Digital 3"
+          },
+          {
+            "language": "EN",
+            "text": "Print digital 3"
+          },
+          {
+            "language": "FR",
+            "text": "Marquage Numérique 3"
+          },
+          {
+            "language": "HU",
+            "text": "Digitális nyomás 3"
+          },
+          {
+            "language": "IT",
+            "text": "Stampa digitale 3"
+          },
+          {
+            "language": "DA",
+            "text": "Print digital 3"
+          },
+          {
+            "language": "PL",
+            "text": "Druk cyfrowy 3"
+          },
+          {
+            "language": "NL",
+            "text": "Print digital 3"
+          },
+          {
+            "language": "PT",
+            "text": "Impressão Digital 3"
+          },
+          {
+            "language": "RU",
+            "text": "Цифровая печать 3"
+          },
+          {
+            "language": "ES",
+            "text": "Impresión Digital 3"
+          },
+          {
+            "language": "SV",
+            "text": "Digitalt tryck 3"
+          }
+        ]
+      },
+      {
+        "id": "PD4",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Druck Digital 4"
+          },
+          {
+            "language": "EN",
+            "text": "Print digital 4"
+          },
+          {
+            "language": "FR",
+            "text": "Marquage Numérique 4"
+          },
+          {
+            "language": "HU",
+            "text": "Digitális nyomás 4"
+          },
+          {
+            "language": "IT",
+            "text": "Stampa digitale 4"
+          },
+          {
+            "language": "DA",
+            "text": "Print digital 4"
+          },
+          {
+            "language": "PL",
+            "text": "Druk cyfrowy 4"
+          },
+          {
+            "language": "NL",
+            "text": "Print digital 4"
+          },
+          {
+            "language": "PT",
+            "text": "Impressão Digital 4"
+          },
+          {
+            "language": "RU",
+            "text": "Цифровая печать 4"
+          },
+          {
+            "language": "ES",
+            "text": "Impresión Digital 4"
+          },
+          {
+            "language": "SV",
+            "text": "Digitalt tryck 4"
+          }
+        ]
+      },
+      {
+        "id": "PD5",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Druck Digital 5"
+          },
+          {
+            "language": "EN",
+            "text": "Print digital 5"
+          },
+          {
+            "language": "FR",
+            "text": "Marquage Numérique 5"
+          },
+          {
+            "language": "HU",
+            "text": "Digitális nyomás 5"
+          },
+          {
+            "language": "IT",
+            "text": "Stampa digitale 5"
+          },
+          {
+            "language": "DA",
+            "text": "Print digital 5"
+          },
+          {
+            "language": "PL",
+            "text": "Druk cyfrowy 5"
+          },
+          {
+            "language": "NL",
+            "text": "Print digital 5"
+          },
+          {
+            "language": "PT",
+            "text": "Impressão Digital 5"
+          },
+          {
+            "language": "RU",
+            "text": "Цифровая печать 5"
+          },
+          {
+            "language": "ES",
+            "text": "Impresión Digital 5"
+          },
+          {
+            "language": "SV",
+            "text": "Digitalt tryck 5"
+          }
+        ]
+      },
+      {
+        "id": "PD6",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Druck Digital 6"
+          },
+          {
+            "language": "EN",
+            "text": "Print digital 6"
+          },
+          {
+            "language": "FR",
+            "text": "Marquage Numérique 6"
+          },
+          {
+            "language": "HU",
+            "text": "Digitális nyomás 6"
+          },
+          {
+            "language": "IT",
+            "text": "Stampa digitale 6"
+          },
+          {
+            "language": "DA",
+            "text": "Print digital 6"
+          },
+          {
+            "language": "PL",
+            "text": "Druk cyfrowy 6"
+          },
+          {
+            "language": "NL",
+            "text": "Print digital 6"
+          },
+          {
+            "language": "PT",
+            "text": "Impressão Digital 6"
+          },
+          {
+            "language": "RU",
+            "text": "Цифровая печать 6"
+          },
+          {
+            "language": "ES",
+            "text": "Impresión Digital 6"
+          },
+          {
+            "language": "SV",
+            "text": "Digitalt tryck 6"
+          }
+        ]
+      },
+      {
+        "id": "PD7",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Druck Digital 7"
+          },
+          {
+            "language": "EN",
+            "text": "Print digital 7"
+          },
+          {
+            "language": "FR",
+            "text": "Marquage Numérique 7"
+          },
+          {
+            "language": "HU",
+            "text": "Digitális nyomás 7"
+          },
+          {
+            "language": "IT",
+            "text": "Stampa digitale 7"
+          },
+          {
+            "language": "DA",
+            "text": "Print digital 7"
+          },
+          {
+            "language": "PL",
+            "text": "Druk cyfrowy 7"
+          },
+          {
+            "language": "NL",
+            "text": "Print digital 7"
+          },
+          {
+            "language": "PT",
+            "text": "Impressão Digital 7"
+          },
+          {
+            "language": "RU",
+            "text": "Цифровая печать 7"
+          },
+          {
+            "language": "ES",
+            "text": "Impresión Digital 7"
+          },
+          {
+            "language": "SV",
+            "text": "Digitalt tryck 7"
+          }
+        ]
+      },
+      {
+        "id": "PH",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Papier"
+          },
+          {
+            "language": "EN",
+            "text": "Paper"
+          },
+          {
+            "language": "FR",
+            "text": "Papier"
+          },
+          {
+            "language": "HU",
+            "text": "Fénymásolás"
+          },
+          {
+            "language": "IT",
+            "text": "Carta"
+          },
+          {
+            "language": "DA",
+            "text": "Paper"
+          },
+          {
+            "language": "PL",
+            "text": "Papier"
+          },
+          {
+            "language": "NL",
+            "text": "Papier"
+          },
+          {
+            "language": "PT",
+            "text": "Papel"
+          },
+          {
+            "language": "RU",
+            "text": "Бумага"
+          },
+          {
+            "language": "ES",
+            "text": "Papel"
+          },
+          {
+            "language": "SV",
+            "text": "Papper"
+          }
+        ]
+      },
+      {
+        "id": "RS0",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Runddruck Sieb"
+          },
+          {
+            "language": "EN",
+            "text": "round screen"
+          },
+          {
+            "language": "FR",
+            "text": "sérigraphie circulaire"
+          },
+          {
+            "language": "HU",
+            "text": "Körszita"
+          },
+          {
+            "language": "IT",
+            "text": "Serigrafia rotativa 0"
+          },
+          {
+            "language": "DA",
+            "text": "rund screen print"
+          },
+          {
+            "language": "PL",
+            "text": "sitodruk na okrągło"
+          },
+          {
+            "language": "NL",
+            "text": "ronddruk"
+          },
+          {
+            "language": "PT",
+            "text": "serigrafía circular"
+          },
+          {
+            "language": "RU",
+            "text": "печать RS0"
+          },
+          {
+            "language": "ES",
+            "text": "serigrafía circular"
+          },
+          {
+            "language": "SV",
+            "text": "rund screen"
+          }
+        ]
+      },
+      {
+        "id": "RS1",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Runddruck Sieb"
+          },
+          {
+            "language": "EN",
+            "text": "round screen"
+          },
+          {
+            "language": "FR",
+            "text": "sérigraphie circulaire"
+          },
+          {
+            "language": "HU",
+            "text": "Körszita"
+          },
+          {
+            "language": "IT",
+            "text": "Serigrafia rotativa 1"
+          },
+          {
+            "language": "DA",
+            "text": "rund screen print"
+          },
+          {
+            "language": "PL",
+            "text": "sitodruk na okrągło"
+          },
+          {
+            "language": "NL",
+            "text": "ronddruk"
+          },
+          {
+            "language": "PT",
+            "text": "serigrafía circular"
+          },
+          {
+            "language": "RU",
+            "text": "печать RS1"
+          },
+          {
+            "language": "ES",
+            "text": "serigrafía circular"
+          },
+          {
+            "language": "SV",
+            "text": "rund screen"
+          }
+        ]
+      },
+      {
+        "id": "RS2",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Runddruck Sieb"
+          },
+          {
+            "language": "EN",
+            "text": "round screen"
+          },
+          {
+            "language": "FR",
+            "text": "sérigraphie circulaire"
+          },
+          {
+            "language": "HU",
+            "text": "Körszita"
+          },
+          {
+            "language": "IT",
+            "text": "Serigrafia rotativa 2"
+          },
+          {
+            "language": "DA",
+            "text": "rund screen print"
+          },
+          {
+            "language": "PL",
+            "text": "sitodruk na okrągło"
+          },
+          {
+            "language": "NL",
+            "text": "ronddruk"
+          },
+          {
+            "language": "PT",
+            "text": "serigrafía circular"
+          },
+          {
+            "language": "RU",
+            "text": "печать RS2"
+          },
+          {
+            "language": "ES",
+            "text": "serigrafía circular"
+          },
+          {
+            "language": "SV",
+            "text": "rund screen"
+          }
+        ]
+      },
+      {
+        "id": "RS3",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Runddruck Sieb"
+          },
+          {
+            "language": "EN",
+            "text": "round screen"
+          },
+          {
+            "language": "FR",
+            "text": "sérigraphie circulaire"
+          },
+          {
+            "language": "HU",
+            "text": "Körszita"
+          },
+          {
+            "language": "IT",
+            "text": "Serigrafia rotativa 3"
+          },
+          {
+            "language": "DA",
+            "text": "rund screen print"
+          },
+          {
+            "language": "PL",
+            "text": "sitodruk na okrągło"
+          },
+          {
+            "language": "NL",
+            "text": "ronddruk"
+          },
+          {
+            "language": "PT",
+            "text": "serigrafía circular"
+          },
+          {
+            "language": "RU",
+            "text": "печать RS3"
+          },
+          {
+            "language": "ES",
+            "text": "serigrafía circular"
+          },
+          {
+            "language": "SV",
+            "text": "rund screen"
+          }
+        ]
+      },
+      {
+        "id": "RS4",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Runddruck Sieb"
+          },
+          {
+            "language": "EN",
+            "text": "round screen"
+          },
+          {
+            "language": "FR",
+            "text": "sérigraphie circulaire"
+          },
+          {
+            "language": "HU",
+            "text": "Körszita"
+          },
+          {
+            "language": "IT",
+            "text": "Serigrafia rotativa 4"
+          },
+          {
+            "language": "DA",
+            "text": "rund screen print"
+          },
+          {
+            "language": "PL",
+            "text": "sitodruk na okrągło"
+          },
+          {
+            "language": "NL",
+            "text": "ronddruk"
+          },
+          {
+            "language": "PT",
+            "text": "serigrafía circular"
+          },
+          {
+            "language": "RU",
+            "text": "печать RS4"
+          },
+          {
+            "language": "ES",
+            "text": "serigrafía circular"
+          },
+          {
+            "language": "SV",
+            "text": "rund screen"
+          }
+        ]
+      },
+      {
+        "id": "RS5",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Runddruck Sieb"
+          },
+          {
+            "language": "EN",
+            "text": "round screen"
+          },
+          {
+            "language": "FR",
+            "text": "sérigraphie circulaire"
+          },
+          {
+            "language": "HU",
+            "text": "Körszita"
+          },
+          {
+            "language": "IT",
+            "text": "Serigrafia rotativa 5"
+          },
+          {
+            "language": "DA",
+            "text": "rund screen print"
+          },
+          {
+            "language": "PL",
+            "text": "sitodruk na okrągło"
+          },
+          {
+            "language": "NL",
+            "text": "ronddruk"
+          },
+          {
+            "language": "PT",
+            "text": "serigrafía circular"
+          },
+          {
+            "language": "RU",
+            "text": "печать RS5"
+          },
+          {
+            "language": "ES",
+            "text": "serigrafía circular"
+          },
+          {
+            "language": "SV",
+            "text": "rund screen"
+          }
+        ]
+      },
+      {
+        "id": "S0",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Siebdruck"
+          },
+          {
+            "language": "EN",
+            "text": "screen printing"
+          },
+          {
+            "language": "FR",
+            "text": "sérigraphie"
+          },
+          {
+            "language": "HU",
+            "text": "Szitanyomás"
+          },
+          {
+            "language": "IT",
+            "text": "serigrafia"
+          },
+          {
+            "language": "DA",
+            "text": "screen print"
+          },
+          {
+            "language": "PL",
+            "text": "sitodruk"
+          },
+          {
+            "language": "NL",
+            "text": "zeefdruk"
+          },
+          {
+            "language": "PT",
+            "text": "Serigrafia"
+          },
+          {
+            "language": "RU",
+            "text": "Шелкотрафаретная печать"
+          },
+          {
+            "language": "ES",
+            "text": "serigrafía"
+          },
+          {
+            "language": "SV",
+            "text": "Screentryck"
+          }
+        ]
+      },
+      {
+        "id": "S1",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Siebdruck"
+          },
+          {
+            "language": "EN",
+            "text": "screen printing"
+          },
+          {
+            "language": "FR",
+            "text": "sérigraphie"
+          },
+          {
+            "language": "HU",
+            "text": "Szitanyomás"
+          },
+          {
+            "language": "IT",
+            "text": "serigrafia"
+          },
+          {
+            "language": "DA",
+            "text": "screen print"
+          },
+          {
+            "language": "PL",
+            "text": "sitodruk"
+          },
+          {
+            "language": "NL",
+            "text": "zeefdruk"
+          },
+          {
+            "language": "PT",
+            "text": "Serigrafia"
+          },
+          {
+            "language": "RU",
+            "text": "Шелкотрафаретная печать"
+          },
+          {
+            "language": "ES",
+            "text": "serigrafía"
+          },
+          {
+            "language": "SV",
+            "text": "Screentryck"
+          }
+        ]
+      },
+      {
+        "id": "S2",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Siebdruck"
+          },
+          {
+            "language": "EN",
+            "text": "screen printing"
+          },
+          {
+            "language": "FR",
+            "text": "sérigraphie"
+          },
+          {
+            "language": "HU",
+            "text": "Szitanyomás"
+          },
+          {
+            "language": "IT",
+            "text": "serigrafia"
+          },
+          {
+            "language": "DA",
+            "text": "screen print"
+          },
+          {
+            "language": "PL",
+            "text": "sitodruk"
+          },
+          {
+            "language": "NL",
+            "text": "zeefdruk"
+          },
+          {
+            "language": "PT",
+            "text": "Serigrafia"
+          },
+          {
+            "language": "RU",
+            "text": "Шелкотрафаретная печать"
+          },
+          {
+            "language": "ES",
+            "text": "serigrafía"
+          },
+          {
+            "language": "SV",
+            "text": "Screentryck"
+          }
+        ]
+      },
+      {
+        "id": "S3",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Siebdruck"
+          },
+          {
+            "language": "EN",
+            "text": "screen printing"
+          },
+          {
+            "language": "FR",
+            "text": "sérigraphie"
+          },
+          {
+            "language": "HU",
+            "text": "Szitanyomás"
+          },
+          {
+            "language": "IT",
+            "text": "serigrafia"
+          },
+          {
+            "language": "DA",
+            "text": "screen print"
+          },
+          {
+            "language": "PL",
+            "text": "sitodruk"
+          },
+          {
+            "language": "NL",
+            "text": "zeefdruk"
+          },
+          {
+            "language": "PT",
+            "text": "Serigrafia"
+          },
+          {
+            "language": "RU",
+            "text": "Шелкотрафаретная печать"
+          },
+          {
+            "language": "ES",
+            "text": "serigrafía"
+          },
+          {
+            "language": "SV",
+            "text": "Screentryck"
+          }
+        ]
+      },
+      {
+        "id": "S4",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Siebdruck"
+          },
+          {
+            "language": "EN",
+            "text": "screen printing"
+          },
+          {
+            "language": "FR",
+            "text": "sérigraphie"
+          },
+          {
+            "language": "HU",
+            "text": "Szitanyomás"
+          },
+          {
+            "language": "IT",
+            "text": "serigrafia"
+          },
+          {
+            "language": "DA",
+            "text": "screen print"
+          },
+          {
+            "language": "PL",
+            "text": "sitodruk"
+          },
+          {
+            "language": "NL",
+            "text": "zeefdruk"
+          },
+          {
+            "language": "PT",
+            "text": "Serigrafia"
+          },
+          {
+            "language": "RU",
+            "text": "Шелкотрафаретная печать"
+          },
+          {
+            "language": "ES",
+            "text": "serigrafía"
+          },
+          {
+            "language": "SV",
+            "text": "Screentryck"
+          }
+        ]
+      },
+      {
+        "id": "S5",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Siebdruck"
+          },
+          {
+            "language": "EN",
+            "text": "screen printing"
+          },
+          {
+            "language": "FR",
+            "text": "sérigraphie"
+          },
+          {
+            "language": "HU",
+            "text": "Szitanyomás"
+          },
+          {
+            "language": "IT",
+            "text": "serigrafia"
+          },
+          {
+            "language": "DA",
+            "text": "screen print"
+          },
+          {
+            "language": "PL",
+            "text": "sitodruk"
+          },
+          {
+            "language": "NL",
+            "text": "zeefdruk"
+          },
+          {
+            "language": "PT",
+            "text": "Serigrafia"
+          },
+          {
+            "language": "RU",
+            "text": "Шелкотрафаретная печать"
+          },
+          {
+            "language": "ES",
+            "text": "serigrafía"
+          },
+          {
+            "language": "SV",
+            "text": "Screentryck"
+          }
+        ]
+      },
+      {
+        "id": "S6",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Siebdruck"
+          },
+          {
+            "language": "EN",
+            "text": "screen printing"
+          },
+          {
+            "language": "FR",
+            "text": "sérigraphie"
+          },
+          {
+            "language": "HU",
+            "text": "Szitanyomás"
+          },
+          {
+            "language": "IT",
+            "text": "serigrafia"
+          },
+          {
+            "language": "DA",
+            "text": "screen print"
+          },
+          {
+            "language": "PL",
+            "text": "sitodruk"
+          },
+          {
+            "language": "NL",
+            "text": "zeefdruk"
+          },
+          {
+            "language": "PT",
+            "text": "Serigrafia"
+          },
+          {
+            "language": "RU",
+            "text": "Шелкотрафаретная печать"
+          },
+          {
+            "language": "ES",
+            "text": "serigrafía"
+          },
+          {
+            "language": "SV",
+            "text": "Screentryck"
+          }
+        ]
+      },
+      {
+        "id": "T1",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Transferdruck"
+          },
+          {
+            "language": "EN",
+            "text": "transfer printing"
+          },
+          {
+            "language": "FR",
+            "text": "marquage par transfert"
+          },
+          {
+            "language": "HU",
+            "text": "Transzfernyomás"
+          },
+          {
+            "language": "IT",
+            "text": "transfer"
+          },
+          {
+            "language": "DA",
+            "text": "Transfer print"
+          },
+          {
+            "language": "PL",
+            "text": "transfer"
+          },
+          {
+            "language": "NL",
+            "text": "transferdruk"
+          },
+          {
+            "language": "PT",
+            "text": "Transfer"
+          },
+          {
+            "language": "RU",
+            "text": "Термоперенос"
+          },
+          {
+            "language": "ES",
+            "text": "transfer"
+          },
+          {
+            "language": "SV",
+            "text": "transfertryck"
+          }
+        ]
+      },
+      {
+        "id": "TC",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "TransferKeramik"
+          },
+          {
+            "language": "EN",
+            "text": "Ceramics transfer"
+          },
+          {
+            "language": "FR",
+            "text": "Transfert céramique"
+          },
+          {
+            "language": "HU",
+            "text": "Transzfernyomás kerámiafelü"
+          },
+          {
+            "language": "IT",
+            "text": "Transfer su ceramica"
+          },
+          {
+            "language": "DA",
+            "text": "keramik transfer"
+          },
+          {
+            "language": "PL",
+            "text": "Transfer na Ceramice"
+          },
+          {
+            "language": "NL",
+            "text": "Ceramics transfer"
+          },
+          {
+            "language": "PT",
+            "text": "Transfer Cerâmico"
+          },
+          {
+            "language": "RU",
+            "text": "Деколь"
+          },
+          {
+            "language": "ES",
+            "text": "transfer cerámico"
+          },
+          {
+            "language": "SV",
+            "text": "Keramisk transfer"
+          }
+        ]
+      },
+      {
+        "id": "TD",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "TransferDigital"
+          },
+          {
+            "language": "EN",
+            "text": "Digital transfer"
+          },
+          {
+            "language": "FR",
+            "text": "Transfert digital"
+          },
+          {
+            "language": "HU",
+            "text": "Digitális transzfernyomás"
+          },
+          {
+            "language": "IT",
+            "text": "Transfer digitale"
+          },
+          {
+            "language": "DA",
+            "text": "Digital transfer"
+          },
+          {
+            "language": "PL",
+            "text": "Transfer cyfrowy"
+          },
+          {
+            "language": "NL",
+            "text": "Digital transfer"
+          },
+          {
+            "language": "PT",
+            "text": "Transfer Digital"
+          },
+          {
+            "language": "RU",
+            "text": "Цифровой термоперенос"
+          },
+          {
+            "language": "ES",
+            "text": "transfer digital"
+          },
+          {
+            "language": "SV",
+            "text": "Digital transfer"
+          }
+        ]
+      },
+      {
+        "id": "TD1",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "TransferDigital 1"
+          },
+          {
+            "language": "EN",
+            "text": "Digital transfer 1"
+          },
+          {
+            "language": "FR",
+            "text": "Transfert digital 1"
+          },
+          {
+            "language": "HU",
+            "text": "Digitális transzfernyomás1"
+          },
+          {
+            "language": "IT",
+            "text": "Transfer digitale 1"
+          },
+          {
+            "language": "DA",
+            "text": "Digital transfer 1"
+          },
+          {
+            "language": "PL",
+            "text": "Transfer cyfrowy 1"
+          },
+          {
+            "language": "NL",
+            "text": "Digital transfer 1"
+          },
+          {
+            "language": "PT",
+            "text": "Transfer Digital 1"
+          },
+          {
+            "language": "RU",
+            "text": "Цифровой термоперенос 1"
+          },
+          {
+            "language": "ES",
+            "text": "transfer digital 1"
+          },
+          {
+            "language": "SV",
+            "text": "Digital transfer 1"
+          }
+        ]
+      },
+      {
+        "id": "TS",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Sublimationsdruck"
+          },
+          {
+            "language": "EN",
+            "text": "Sublimation Transfer"
+          },
+          {
+            "language": "FR",
+            "text": "Transfert par sublimation"
+          },
+          {
+            "language": "HU",
+            "text": "Szublimáció transzfer"
+          },
+          {
+            "language": "IT",
+            "text": "Transfer sublimatico"
+          },
+          {
+            "language": "DA",
+            "text": "sublimeringstransfer"
+          },
+          {
+            "language": "PL",
+            "text": "Transfer sublimacyjny"
+          },
+          {
+            "language": "NL",
+            "text": "Sublimatie Transfer"
+          },
+          {
+            "language": "PT",
+            "text": "transfer sublimação"
+          },
+          {
+            "language": "RU",
+            "text": "TS"
+          },
+          {
+            "language": "ES",
+            "text": "transfer sublimación"
+          },
+          {
+            "language": "SV",
+            "text": "sublimerings Transfer"
+          }
+        ]
+      },
+      {
+        "id": "PD1",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Druck Digital 1"
+          },
+          {
+            "language": "EN",
+            "text": "Print digital 1"
+          },
+          {
+            "language": "FR",
+            "text": "Marquage Numérique 1"
+          },
+          {
+            "language": "EL",
+            "text": "Ψηφιακή εκτύπωση 1"
+          },
+          {
+            "language": "HU",
+            "text": "Digitális nyomás 1"
+          },
+          {
+            "language": "IT",
+            "text": "Stampa digitale 1"
+          },
+          {
+            "language": "PL",
+            "text": "Druk cyfrowy 1"
+          },
+          {
+            "language": "NL",
+            "text": "Print digital 1"
+          },
+          {
+            "language": "PT",
+            "text": "Impressão Digital 1"
+          },
+          {
+            "language": "RU",
+            "text": "Цифровая печать 1"
+          },
+          {
+            "language": "ES",
+            "text": "Impresión Digital 1"
+          },
+          {
+            "language": "SV",
+            "text": "Digitalt tryck 1"
+          }
+        ]
+      },
+      {
+        "id": "PD2",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Druck Digital 2"
+          },
+          {
+            "language": "EN",
+            "text": "Print digital 2"
+          },
+          {
+            "language": "FR",
+            "text": "Marquage Numérique 2"
+          },
+          {
+            "language": "EL",
+            "text": "Ψηφιακή εκτύπωση 2"
+          },
+          {
+            "language": "HU",
+            "text": "Digitális nyomás 2"
+          },
+          {
+            "language": "IT",
+            "text": "Stampa digitale 2"
+          },
+          {
+            "language": "PL",
+            "text": "Druk cyfrowy 2"
+          },
+          {
+            "language": "NL",
+            "text": "Print digital 2"
+          },
+          {
+            "language": "PT",
+            "text": "Impressão Digital 2"
+          },
+          {
+            "language": "RU",
+            "text": "Цифровая печать 2"
+          },
+          {
+            "language": "ES",
+            "text": "Impresión Digital 2"
+          },
+          {
+            "language": "SV",
+            "text": "Digitalt tryck 2"
+          }
+        ]
+      },
+      {
+        "id": "PD3",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Druck Digital 3"
+          },
+          {
+            "language": "EN",
+            "text": "Print digital 3"
+          },
+          {
+            "language": "FR",
+            "text": "Marquage Numérique 3"
+          },
+          {
+            "language": "EL",
+            "text": "Ψηφιακή εκτύπωση 3"
+          },
+          {
+            "language": "HU",
+            "text": "Digitális nyomás 3"
+          },
+          {
+            "language": "IT",
+            "text": "Stampa digitale 3"
+          },
+          {
+            "language": "PL",
+            "text": "Druk cyfrowy 3"
+          },
+          {
+            "language": "NL",
+            "text": "Print digital 3"
+          },
+          {
+            "language": "PT",
+            "text": "Impressão Digital 3"
+          },
+          {
+            "language": "RU",
+            "text": "Цифровая печать 3"
+          },
+          {
+            "language": "ES",
+            "text": "Impresión Digital 3"
+          },
+          {
+            "language": "SV",
+            "text": "Digitalt tryck 3"
+          }
+        ]
+      },
+      {
+        "id": "DPT",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Druck Digital"
+          },
+          {
+            "language": "EN",
+            "text": "Digital Print textile"
+          },
+          {
+            "language": "FR",
+            "text": "Marquage Numérique"
+          },
+          {
+            "language": "EL",
+            "text": "Ψηφιακή εκτύπωση"
+          },
+          {
+            "language": "HU",
+            "text": "Digitális nyomás"
+          },
+          {
+            "language": "IT",
+            "text": "Stampa digitale"
+          },
+          {
+            "language": "PL",
+            "text": "Druk cyfrowy"
+          },
+          {
+            "language": "NL",
+            "text": "Print digital"
+          },
+          {
+            "language": "PT",
+            "text": "Impressão Digital"
+          },
+          {
+            "language": "RU",
+            "text": "Цифровая печать"
+          },
+          {
+            "language": "ES",
+            "text": "Impresión Digital"
+          },
+          {
+            "language": "SV",
+            "text": "Digitalt tryck"
+          }
+        ]
+      },
+      {
+        "id": "TS2",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Sublimationsdruck 2"
+          },
+          {
+            "language": "EN",
+            "text": "Sublimation Transfer 2"
+          },
+          {
+            "language": "FR",
+            "text": "Transfert par sublimation2"
+          },
+          {
+            "language": "HU",
+            "text": "Szublimáció transzfer 2"
+          },
+          {
+            "language": "IT",
+            "text": "Transfer sublimatico 2"
+          },
+          {
+            "language": "DA",
+            "text": "sublimeringstransfer 2"
+          },
+          {
+            "language": "PL",
+            "text": "Transfer sublimacyjny 2"
+          },
+          {
+            "language": "NL",
+            "text": "Sublimatie Transfer 2"
+          },
+          {
+            "language": "PT",
+            "text": "transfer sublimação 2"
+          },
+          {
+            "language": "RU",
+            "text": "TS2"
+          },
+          {
+            "language": "ES",
+            "text": "transfer sublimación 2"
+          },
+          {
+            "language": "SV",
+            "text": "sublimerings Transfer 2"
+          }
+        ]
+      },
+      {
+        "id": "TS3",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Sublimationsdruck 3"
+          },
+          {
+            "language": "EN",
+            "text": "Sublimation Transfer 3"
+          },
+          {
+            "language": "FR",
+            "text": "Transfert par sublimation3"
+          },
+          {
+            "language": "HU",
+            "text": "Szublimáció transzfer 3"
+          },
+          {
+            "language": "IT",
+            "text": "Transfer sublimatico 3"
+          },
+          {
+            "language": "DA",
+            "text": "sublimeringstransfer 3"
+          },
+          {
+            "language": "PL",
+            "text": "Transfer sublimacyjny 3"
+          },
+          {
+            "language": "NL",
+            "text": "Sublimatie Transfer 3"
+          },
+          {
+            "language": "PT",
+            "text": "transfer sublimação 3"
+          },
+          {
+            "language": "RU",
+            "text": "TS3"
+          },
+          {
+            "language": "ES",
+            "text": "transfer sublimación 3"
+          },
+          {
+            "language": "SV",
+            "text": "sublimerings Transfer 3"
+          }
+        ]
+      },
+      {
+        "id": "TSM",
+        "NAME": [
+          {
+            "language": "DE",
+            "text": "Sublimationsdruck Tassen"
+          },
+          {
+            "language": "EN",
+            "text": "sublimation Transfer mugs"
+          },
+          {
+            "language": "FR",
+            "text": "Transfert par sublimation"
+          },
+          {
+            "language": "HU",
+            "text": "Szublimáció transzfer bögr"
+          },
+          {
+            "language": "IT",
+            "text": "Transfer Sublimatico su ta"
+          },
+          {
+            "language": "DA",
+            "text": "sublimeringstransfer krus"
+          },
+          {
+            "language": "PL",
+            "text": "Transfer sublimacyjny na k"
+          },
+          {
+            "language": "NL",
+            "text": "Sublimatie Transfer mokken"
+          },
+          {
+            "language": "PT",
+            "text": "transfer sublimação Caneca"
+          },
+          {
+            "language": "RU",
+            "text": " на кружках TSM"
+          },
+          {
+            "language": "ES",
+            "text": "transfer sublimación tazas"
+          },
+          {
+            "language": "SV",
+            "text": "sublimerings tryck muggar"
+          }
+        ]
+      }
+    ]

@@ -53,6 +53,7 @@ define( 'OUTPUT_PATH', GADGET_PATH . 'output/');
 require GADGET_PATH . 'vendor/autoload.php';
 require GADGET_PATH . 'helpers/products.php';
 require GADGET_PATH . 'helpers/csv-headings.php';
+require GADGET_PATH . 'helpers/printing-id-converter.php';
 require GADGET_PATH . 'controllers/ReaderController.php';
 require GADGET_PATH . 'controllers/DownloadController.php';
 require GADGET_PATH . 'controllers/ImportController.php';
@@ -78,45 +79,62 @@ add_action('init', function(){
 	$files = [
 		/* [
 			'name' => 'stock.xml',
-			'payload' => 'stock'
+			'payload' => 'compare',
+			'sku_property' => 'ID'
 		],
 		[
 			'name' => 'stock_textile.xml',
-			'payload' => 'stock'
+			'payload' => 'compare',
+			'sku_property' => 'ID'
+		], */
+		/* [
+			'name' => 'printinfo.xml',
+			'payload' => 'compare',
+			'check' => 'PRODUCT_BASE_NUMBER',
+			'sku_property' => 'PRODUCT_BASE_NUMBER'
 		],
+		[
+			'name' => 'printinfo_TEXTILE.xml',
+			'payload' => 'compare',
+			'check' => 'PRODUCT_BASE_NUMBER',
+			'sku_property' => 'PRODUCT_BASE_NUMBER'
+		], */
 		[
 			'name' => 'prodinfo_it_v1.1.xml',
 			'payload' => 'prodinfo',
-			'compare' => 'stock.json'
+			//'compare' => 'stock.json',
+			'attributes' => 'printinfo.json'
 		],
 		[
 			'name' => 'prodinfo_TEXTILE_IT.xml',
 			'payload' => 'prodinfo',
-			'compare' => 'stock_textile.json'
-		] */
+			//'compare' => 'stock_textile.json',
+			'attributes' => 'printinfo_TEXTILE.json'
+		],
+		/* [
+			'name' => 'USBprodinfo.xml',
+			'payload' => 'usb',
+			'compare' => 'USBpricelist.json'
+		],
 		[
 			'name' => 'USBpricelist.xml',
 			'payload' => 'usbprice',
 			'remote_folder' => 'usbpricelist/'
-		],
-		[
-			'name' => 'USBprodinfo.xml',
-			'payload' => 'usb',
-			'compare' => 'USBpricelist.json'
-		]
+		], */
 	];
 	switch ($_GET['payload']) {
 		case 'run':
 			foreach ($files as $file) {
-				$downloader = new DownloadController();
-				$downloader->download_xml($file);
+				//$downloader = new DownloadController();
+				//$downloader->download_xml($file);
 				switch ($file['payload']) {
-					case 'stock': 
+					case 'compare': 
+						$check = $file['check'] ? $file['check'] : false;
 						$converter = new ConvertController($file, 2);
-						$converter->run();
+						$converter->run($file['sku_property'], $check);
 						break;
 					case 'prodinfo':
-						$importer = new ImportController($file, 3, OUTPUT_PATH . $file['compare'], 'prodinfo');
+						$importer = new ImportController($file, 3, $file['compare'], 'prodinfo', $file['attributes']);
 						$importer->run();
 						break;
 					case 'usbprice':
@@ -124,7 +142,7 @@ add_action('init', function(){
 						$converter->run('CODE');
 						break;
 					case 'usb':
-						$importer = new ImportController($file, 3, OUTPUT_PATH . $file['compare'], 'usb');
+						$importer = new ImportController($file, 3, $file['compare'], 'usb');
 						$importer->run('code');
 					default:
 						# code...
@@ -138,3 +156,5 @@ add_action('init', function(){
 			break;
 	}
 }, 6);
+
+add_filter( 'wc_product_has_unique_sku', '__return_false' );

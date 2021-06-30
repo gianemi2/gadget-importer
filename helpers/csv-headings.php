@@ -32,7 +32,29 @@ function get_csv_headings($payload){
                 'Attribute 2 global'
             ];
             break;
-        
+        case 'usb':
+            return [
+                'offer_name',
+                'rule_on',
+                'product_id',
+                'category_id',
+                'check_on',
+                'min',
+                'max',
+                'discount_type',
+                'value',
+                'max_discount',
+                'allow_roles',
+                'allow_membership_plans',
+                'from_date',
+                'to_date',
+                'adjustment',
+                'email_ids',
+                'prev_order_count',
+                'prev_order_total_amt',
+                'repeat_rule'
+            ];
+            break;
         default:
             # code...
             break;

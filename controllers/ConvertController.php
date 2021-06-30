@@ -5,9 +5,13 @@ class ConvertController extends ReaderController{
         $this->json_path = str_replace('.xml', '.json', $this->output);
         $this->JSON = [];
     }
-    function run($sku_property = 'ID'){
+    function run($sku_property = 'ID', $check_for_property = false){
         while ($node = $this->data->getNode()) {
             $xml_product = simplexml_load_string($node);
+            if($check_for_property){
+                if(!isset($xml_product->$check_for_property))
+                    continue;
+            }
             $el = $this->JSON[(string)$xml_product->$sku_property];
             if(isset($el)){
                 $el[] = $xml_product;

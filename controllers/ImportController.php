@@ -1,6 +1,6 @@
 <?php
 class ImportController extends ReaderController{
-    function __construct($xml_name, $nodeParseDepth = 3, $compare_file = false, $product_type = 'prodinfo'){
+    function __construct($xml_name, $nodeParseDepth = 3, $compare_file = false, $product_type = 'prodinfo', $attributes = false){
         parent::__construct($xml_name);
         
         $this->CSV = str_replace('.xml', '.csv', $this->output);
@@ -8,10 +8,16 @@ class ImportController extends ReaderController{
         $this->PRODUCTS = [];
         $this->JSON = false; 
         $this->PRODUCT_TYPE = $product_type;
-        if($compare_file){
-            $json = file_get_contents($compare_file);
+        if($this->compare_file){
+            $json = file_get_contents($this->compare_file);
             if($json){
                 $this->JSON = json_decode($json);
+            }
+        }
+        if($this->attributes){
+            $attributes = file_get_contents($this->attributes);
+            if($attributes){
+                $this->ATTRIBUTES = json_decode($attributes);
             }
         }
     }
@@ -38,13 +44,16 @@ class ImportController extends ReaderController{
         fputcsv($this->CSV_STREAM, get_csv_headings('prodinfo'));
         $this->PRODUCTS = array_values($this->PRODUCTS);
 
-        echo '<pre>';
-        print_r($this->JSON);
-        print_r($this->PRODUCTS);
-        echo '</pre>';
-
-        foreach ($this->PRODUCTS as $product) {
-            
+        foreach ($this->PRODUCTS as $products) {
+            $product_type = count($products) > 1 ? 'variable' : 'simple';
+            $csv_line = convert_xml_usb($products, $product_type);
+            if(is_array($csv_line[0])){
+                foreach ($csv_line as $line) {
+                    fputcsv($this->CSV_STREAM, $line);
+                }
+            } else {
+                fputcsv($this->CSV_STREAM, $csv_line);
+            }
         }
     }
 
@@ -54,7 +63,7 @@ class ImportController extends ReaderController{
 
         foreach ($this->PRODUCTS as $products) {
             $product_type = count($products) > 1 ? 'variable' : 'simple';
-            $csv_line = convert_xml_prodinfo($products, $product_type, $this->JSON);
+            $csv_line = convert_xml_prodinfo($products, $product_type, $this->JSON, $this->ATTRIBUTES);
             if(is_array($csv_line[0])){
                 foreach ($csv_line as $line) {
                     fputcsv($this->CSV_STREAM, $line);
