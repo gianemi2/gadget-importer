@@ -10,10 +10,6 @@ function convert_xml_prodinfo($products, $product_type, $compare_file = false, $
 
     ];
     if($product_type === 'variable'){
-        echo '<pre>';
-        echo 'VARIABILE!';
-        print_r($attributes[$products[0]->PRODUCT_BASE_NUMBER]);
-        echo '</pre>';
         foreach ($products as $product) {
             if(isset($product->COLOR_DESCRIPTION))
                 $variables['color'][] = (string)$product->COLOR_DESCRIPTION;
@@ -25,12 +21,7 @@ function convert_xml_prodinfo($products, $product_type, $compare_file = false, $
             }
         }
     } else {
-        echo '<pre>';
-        echo 'NONVARIABILE!';
-        print_r($attributes[(string)$products[0]->PRODUCT_BASE_NUMBER]);
-        echo '</pre>';
     }
-    die();
     $p = $products[0];
     $category_string = $p->CATEGORY_LEVEL_2;
     $category_string .= strlen($p->CATEGORY_LEVEL_3) > 0 ? ' > ' . $p->CATEGORY_LEVEL_3 : '';
@@ -95,7 +86,7 @@ function convert_xml_prodinfo($products, $product_type, $compare_file = false, $
                     100, // Sale price
                     110, // Regular price
                     (string)$category_string, // Categories
-                    (string)$images, // Images
+                    (string)$p->IMAGE_URL, // Images
                     "Color", // Attr name
                     (string)$p->COLOR_DESCRIPTION, // Attr values
                     1, // Attr visible

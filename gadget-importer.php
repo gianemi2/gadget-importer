@@ -54,10 +54,12 @@ require GADGET_PATH . 'vendor/autoload.php';
 require GADGET_PATH . 'helpers/products.php';
 require GADGET_PATH . 'helpers/csv-headings.php';
 require GADGET_PATH . 'helpers/printing-id-converter.php';
+require GADGET_PATH . 'helpers/create-prodextras.php';
 require GADGET_PATH . 'controllers/ReaderController.php';
 require GADGET_PATH . 'controllers/DownloadController.php';
 require GADGET_PATH . 'controllers/ImportController.php';
 require GADGET_PATH . 'controllers/ConvertController.php';
+require GADGET_PATH . 'controllers/ProdExtraController.php';
 
 /**
  * Begins execution of the plugin.
@@ -77,7 +79,7 @@ function run_gadget_importer() {
 
 add_action('init', function(){
 	$files = [
-		/* [
+		[
 			'name' => 'stock.xml',
 			'payload' => 'compare',
 			'sku_property' => 'ID'
@@ -86,32 +88,31 @@ add_action('init', function(){
 			'name' => 'stock_textile.xml',
 			'payload' => 'compare',
 			'sku_property' => 'ID'
-		], */
-		/* [
+		],
+		[
 			'name' => 'printinfo.xml',
-			'payload' => 'compare',
+			'payload' => 'prodextras',
 			'check' => 'PRODUCT_BASE_NUMBER',
 			'sku_property' => 'PRODUCT_BASE_NUMBER'
 		],
 		[
 			'name' => 'printinfo_TEXTILE.xml',
-			'payload' => 'compare',
+			'payload' => 'prodextras',
 			'check' => 'PRODUCT_BASE_NUMBER',
 			'sku_property' => 'PRODUCT_BASE_NUMBER'
-		], */
+		]
+		, 
 		[
 			'name' => 'prodinfo_it_v1.1.xml',
 			'payload' => 'prodinfo',
-			//'compare' => 'stock.json',
-			'attributes' => 'printinfo.json'
+			'compare' => 'stock.json'
 		],
 		[
 			'name' => 'prodinfo_TEXTILE_IT.xml',
 			'payload' => 'prodinfo',
-			//'compare' => 'stock_textile.json',
-			'attributes' => 'printinfo_TEXTILE.json'
-		],
-		/* [
+			'compare' => 'stock_textile.json'
+		]/*,
+		[
 			'name' => 'USBprodinfo.xml',
 			'payload' => 'usb',
 			'compare' => 'USBpricelist.json'
@@ -131,6 +132,11 @@ add_action('init', function(){
 					case 'compare': 
 						$check = $file['check'] ? $file['check'] : false;
 						$converter = new ConvertController($file, 2);
+						$converter->run($file['sku_property'], $check);
+						break;
+					case 'prodextras':
+						$check = $file['check'] ? $file['check'] : false;
+						$converter = new ProdExtraController($file, 2);
 						$converter->run($file['sku_property'], $check);
 						break;
 					case 'prodinfo':
@@ -157,4 +163,32 @@ add_action('init', function(){
 	}
 }, 6);
 
+add_filter('before_map_products', function($prod_string){
+	if(!$prod_string['id']){
+		$product_id = wc_get_product_id_by_sku( $product['sku'] );
+		$product = wc_get_product( $product_id );
+		if($product){
+			$prod_string['title'] = $product->get_name();
+			$prod_string['id'] = $product_id;
+		} else {
+			return false;
+		}
+	}
+	return $prod_string;
+});
+add_filter('before_create_table_products', function($group_row){
+	$prod_string = unserialize($group_row['group_id']);
+	if(!$prod_string['id']){
+		$product_id = wc_get_product_id_by_sku( $prod_string['sku'] );
+		$product = wc_get_product( $product_id );
+		if($product){
+			$prod_string['title'] = $product->get_name();
+			$prod_string['id'] = $product_id;
+		} else {
+			return false;
+		}
+	}
+	$group_row['group_id'] = serialize($prod_string);
+	return $group_row;
+});
 add_filter( 'wc_product_has_unique_sku', '__return_false' );

@@ -3,6 +3,9 @@ class ImportController extends ReaderController{
     function __construct($xml_name, $nodeParseDepth = 3, $compare_file = false, $product_type = 'prodinfo', $attributes = false){
         parent::__construct($xml_name);
         
+        if($compare_file){
+            $this->compare_file = OUTPUT_PATH . $compare_file;
+        }
         $this->CSV = str_replace('.xml', '.csv', $this->output);
         $this->CSV_STREAM = fopen($this->CSV, 'w');
         $this->PRODUCTS = [];
@@ -11,13 +14,19 @@ class ImportController extends ReaderController{
         if($this->compare_file){
             $json = file_get_contents($this->compare_file);
             if($json){
+                echo 'OK COMPARE FILE FOUND!';
                 $this->JSON = json_decode($json);
+            } else {
+                echo 'compare file not found :(';
             }
         }
         if($this->attributes){
             $attributes = file_get_contents($this->attributes);
             if($attributes){
+                echo 'OK ATTRIBUTES FILE FOUND!';
                 $this->ATTRIBUTES = json_decode($attributes);
+            } else {
+                echo 'attributes file not found :(';
             }
         }
     }

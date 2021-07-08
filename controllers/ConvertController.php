@@ -19,9 +19,10 @@ class ConvertController extends ReaderController{
                 $this->JSON[(string)$xml_product->$sku_property][] = $xml_product;
             }
         }
-        if(file_put_contents( $this->json_path, json_encode($this->JSON) )) 
+        if(file_put_contents( $this->json_path, json_encode($this->JSON) )) {
             echo "Stock JSON created!";
-        else 
+        } else {
             echo "Something goes wrong.";
+        }
     }
 }
